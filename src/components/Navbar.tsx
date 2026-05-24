@@ -79,9 +79,9 @@ const Navbar = () => {
                 key={item.label}
                 onClick={() => handleNav(item)}
                 className="text-xs tracking-[0.25em] uppercase transition-colors duration-300"
-                style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
+                style={{ color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a574')}
-                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.6)')}
+                onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.85)')}
               >
                 {item.label}
               </button>
@@ -97,7 +97,7 @@ const Navbar = () => {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = 'rgba(212,165,116,0.08)';
-                e.currentTarget.style.borderColor = 'rgba(212,165,116,0.5)';
+                e.currentTarget.style.borderColor = 'rgba(212,165,116,0.8)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'transparent';

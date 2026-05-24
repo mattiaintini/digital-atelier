@@ -85,7 +85,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
 
   const inputStyle = { border: '1px solid rgba(255,255,255,0.1)', background: 'transparent' };
   const labelClass = "block text-[8px] tracking-[0.3em] uppercase mb-1.5";
-  const labelStyle = { color: 'rgba(255,255,255,0.5)' };
+  const labelStyle = { color: 'rgba(255,255,255,0.78)' };
   const inputClass = "w-full text-white text-sm py-3 px-3 rounded-lg outline-none min-h-[44px]";
 
   return (
@@ -116,14 +116,14 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                 <h3 className="text-lg mb-2" style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}>
                   {t.contact.successTitle}
                 </h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.82)' }}>
                   {t.contact.successDesc}
                 </p>
               </div>
             ) : (
               <>
                 <h2 className="text-xl mb-1" style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}>{t.contact.title}</h2>
-                <p className="text-[9px] tracking-[0.2em] uppercase mb-6" style={{ color: 'rgba(255,255,255,0.45)' }}>
+                <p className="text-[9px] tracking-[0.2em] uppercase mb-6" style={{ color: 'rgba(255,255,255,0.72)' }}>
                   {t.contact.subtitle}
                 </p>
 
@@ -168,7 +168,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       onCheckedChange={(checked) => setPrivacy(checked === true)}
                       className="mt-0.5 border-white/20 data-[state=checked]:bg-[#d4a574] data-[state=checked]:border-[#d4a574]"
                     />
-                    <label htmlFor="privacy-consent" className="text-[10px] leading-[1.6] cursor-pointer" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                    <label htmlFor="privacy-consent" className="text-[10px] leading-[1.6] cursor-pointer" style={{ color: 'rgba(255,255,255,0.82)' }}>
                       Ho letto e accetto l'<Link to="/privacy-policy" target="_blank" className="underline" style={{ color: '#d4a574' }} onClick={(e) => e.stopPropagation()}>Informativa sulla Privacy</Link> ai sensi del Reg. UE 2016/679 (GDPR). *
                     </label>
                   </div>

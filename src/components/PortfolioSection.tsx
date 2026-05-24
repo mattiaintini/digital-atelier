@@ -149,7 +149,7 @@ const PortfolioSection = () => {
       <div ref={headingRef} className="max-w-5xl mx-auto text-center mb-12 md:mb-20 px-4 md:px-16">
         <p
           className="text-[10px] md:text-[11px] tracking-[0.5em] uppercase mb-4 md:mb-5"
-          style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.5)' }}
+          style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.8)' }}
         >
           {t.portfolio.label}
         </p>

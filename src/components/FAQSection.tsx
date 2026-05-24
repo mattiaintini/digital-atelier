@@ -43,7 +43,7 @@ const FAQSection = () => {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="px-4 pb-4 text-[13px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                    <p className="px-4 pb-4 text-[13px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.82)' }}>
                       {faq.answer}
                     </p>
                   </motion.div>

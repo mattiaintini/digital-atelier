@@ -149,7 +149,7 @@ function ProjectCard({ project }: { project: Project }) {
           className="text-xs tracking-widest"
           style={{
             fontFamily: 'var(--font-body)',
-            color: 'rgba(212,165,116,0.5)',
+            color: 'rgba(212,165,116,0.8)',
           }}
         >
           {project.year}
