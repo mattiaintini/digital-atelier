@@ -46,8 +46,8 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
       description: lang === 'it'
         ? 'Ideale per una prima presenza professionale online.'
         : 'Ideal for a first professional online presence.',
-      price: lang === 'it' ? 'Da 299€' : 'From €299',
-      showPrice: true,
+      price: null,
+      showPrice: false,
       cta: lang === 'it' ? 'Richiedi Preventivo' : 'Request Quote',
       onAction: onContact,
       hasConfigurator: false,
