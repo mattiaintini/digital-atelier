@@ -58,7 +58,7 @@ const AboutSection = () => {
       <div className="relative z-10 max-w-3xl mx-auto">
         <p
           className="about-anim text-[10px] tracking-[0.5em] uppercase mb-6"
-          style={{ color: 'rgba(212,165,116,0.65)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
+          style={{ color: 'rgba(212,165,116,0.9)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
         >
           {t.about.label}
         </p>
@@ -84,7 +84,7 @@ const AboutSection = () => {
 
         <div
           className="about-anim h-px w-20 mb-8 md:mb-12"
-          style={{ background: 'linear-gradient(90deg, rgba(212,165,116,0.5), transparent)' }}
+          style={{ background: 'linear-gradient(90deg, rgba(212,165,116,0.8), transparent)' }}
         />
 
         <div

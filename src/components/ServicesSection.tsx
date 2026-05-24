@@ -109,7 +109,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
         <div className="text-center mb-16 md:mb-24">
           <p
             className="text-[10px] md:text-[11px] tracking-[0.5em] uppercase mb-4"
-            style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.65)' }}
+            style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.9)' }}
           >
             {lang === 'it' ? 'Cosa Offriamo' : 'What We Offer'}
           </p>
@@ -121,7 +121,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
           </h2>
           <p
             className="text-sm md:text-base max-w-2xl mx-auto"
-            style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.5)', letterSpacing: '0.03em', lineHeight: 1.9 }}
+            style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.78)', letterSpacing: '0.03em', lineHeight: 1.9 }}
           >
             {lang === 'it'
               ? 'Ogni nostro progetto è creato al 100% su misura. I pacchetti sottostanti sono solo esempi illustrativi delle nostre capacità.'
@@ -145,7 +145,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                 <div className="flex items-center gap-3">
                   <span
                     className="text-[10px] tracking-[0.3em] uppercase"
-                    style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.5)' }}
+                    style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.8)' }}
                   >
                     0{i + 1}
                   </span>
@@ -160,13 +160,13 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                 </h3>
                 <p
                   className="text-[10px] tracking-[0.3em] uppercase mb-2"
-                  style={{ color: 'rgba(212,165,116,0.65)', fontFamily: 'var(--font-body)' }}
+                  style={{ color: 'rgba(212,165,116,0.9)', fontFamily: 'var(--font-body)' }}
                 >
                   {pkg.subtitle}
                 </p>
                 <p
                   className="text-sm mb-4 max-w-lg mx-auto"
-                  style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}
+                  style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
                 >
                   {pkg.description}
                 </p>
@@ -177,7 +177,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                       <span className="w-1 h-1 rounded-full" style={{ background: '#d4a574', opacity: 0.4 }} />
                       <span
                         className="text-[11px]"
-                        style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.55)' }}
+                        style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.82)' }}
                       >
                         {feat}
                       </span>
@@ -199,7 +199,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                     {pkg.price}
                   </p>
                 ) : (
-                  <p className="text-[11px] italic" style={{ color: 'rgba(212,165,116,0.7)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
+                  <p className="text-[11px] italic" style={{ color: 'rgba(212,165,116,0.92)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
                     {lang === 'it' ? 'Previa consulenza gratuita' : 'After free consultation'}
                   </p>
                 )}
@@ -214,7 +214,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                   }}
                   onMouseEnter={(e) => {
                     e.currentTarget.style.background = 'rgba(212,165,116,0.1)';
-                    e.currentTarget.style.borderColor = 'rgba(212,165,116,0.5)';
+                    e.currentTarget.style.borderColor = 'rgba(212,165,116,0.8)';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = 'transparent';
@@ -228,7 +228,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
           ))}
         </div>
 
-        <p className="text-center text-[10px] tracking-wider mt-12" style={{ color: 'rgba(255,255,255,0.4)', fontFamily: 'var(--font-body)' }}>
+        <p className="text-center text-[10px] tracking-wider mt-12" style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)' }}>
           {lang === 'it' ? 'Percorso Fondamentale pronto in 72 ore' : 'Fundamental Path ready in 72 hours'} · {lang === 'it' ? 'Per gli altri percorsi, tempi in base al progetto.' : 'Other paths: timeline based on project scope.'}
         </p>
       </div>

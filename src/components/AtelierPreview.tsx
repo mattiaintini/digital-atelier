@@ -28,7 +28,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
       <div className="max-w-4xl mx-auto text-center">
         <p
           className="atelier-reveal text-[10px] md:text-[11px] tracking-[0.5em] uppercase mb-4"
-          style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.65)' }}
+          style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.9)' }}
         >
           {t.atelier.label}
         </p>
@@ -40,7 +40,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
         </h2>
         <p
           className="atelier-reveal text-xs md:text-base max-w-2xl mx-auto mb-10 md:mb-16"
-          style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.5)', lineHeight: 1.8 }}
+          style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
         >
           {t.atelier.subtitle}
         </p>
@@ -54,7 +54,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
                   <Icon size={16} className="mt-0.5 flex-shrink-0" style={{ color: '#d4a574', opacity: 0.6 }} />
                   <p
                     className="text-xs md:text-sm"
-                    style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.6)', lineHeight: 1.7 }}
+                    style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.85)', lineHeight: 1.7 }}
                   >
                     {feature}
                   </p>
@@ -87,7 +87,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
           </button>
           <p
             className="text-[9px] tracking-[0.3em] uppercase"
-            style={{ color: 'rgba(212,165,116,0.55)', fontFamily: 'var(--font-body)' }}
+            style={{ color: 'rgba(212,165,116,0.85)', fontFamily: 'var(--font-body)' }}
           >
             {t.atelier.exclusive}
           </p>
