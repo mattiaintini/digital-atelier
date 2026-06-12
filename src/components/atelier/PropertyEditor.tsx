@@ -42,7 +42,7 @@ const PropertyEditor = () => {
       {/* Element info header */}
       <div className="flex items-center justify-between">
         <div>
-          <p className="text-[9px] tracking-[0.2em] uppercase" style={{ color: '#d4a574' }}>{element.label}</p>
+          <p className="text-[9px] tracking-[0.2em] uppercase" style={{ color: '#D97757' }}>{element.label}</p>
           <p className="text-[7px] mt-0.5" style={{ color: 'rgba(255,255,255,0.2)' }}>Tipo: {element.type}</p>
         </div>
         <button
@@ -70,8 +70,8 @@ const PropertyEditor = () => {
                 max={48}
                 value={overrides.fontSize || 14}
                 onChange={(e) => update('fontSize', Number(e.target.value))}
-                className="flex-1 accent-[#d4a574] h-1"
-                style={{ accentColor: '#d4a574' }}
+                className="flex-1 accent-[#D97757] h-1"
+                style={{ accentColor: '#D97757' }}
               />
               <span className="text-[8px] font-mono w-8 text-right" style={{ color: 'rgba(255,255,255,0.3)' }}>
                 {overrides.fontSize || 14}px
@@ -88,9 +88,9 @@ const PropertyEditor = () => {
                   onClick={() => update('fontWeight', w)}
                   className="flex-1 py-1 rounded text-[7px]"
                   style={{
-                    background: (overrides.fontWeight || '400') === w ? 'rgba(212,165,116,0.15)' : 'rgba(255,255,255,0.03)',
-                    border: `1px solid ${(overrides.fontWeight || '400') === w ? 'rgba(212,165,116,0.3)' : 'rgba(255,255,255,0.05)'}`,
-                    color: (overrides.fontWeight || '400') === w ? '#d4a574' : 'rgba(255,255,255,0.25)',
+                    background: (overrides.fontWeight || '400') === w ? 'rgba(217,119,87,0.15)' : 'rgba(255,255,255,0.03)',
+                    border: `1px solid ${(overrides.fontWeight || '400') === w ? 'rgba(217,119,87,0.3)' : 'rgba(255,255,255,0.05)'}`,
+                    color: (overrides.fontWeight || '400') === w ? '#D97757' : 'rgba(255,255,255,0.25)',
                     fontWeight: w,
                   }}
                 >
@@ -111,7 +111,7 @@ const PropertyEditor = () => {
                 value={overrides.letterSpacing ?? 0}
                 onChange={(e) => update('letterSpacing', Number(e.target.value))}
                 className="flex-1 h-1"
-                style={{ accentColor: '#d4a574' }}
+                style={{ accentColor: '#D97757' }}
               />
               <span className="text-[8px] font-mono w-8 text-right" style={{ color: 'rgba(255,255,255,0.3)' }}>
                 {overrides.letterSpacing ?? 0}px
@@ -167,7 +167,7 @@ const PropertyEditor = () => {
                 value={overrides.borderRadius ?? 0}
                 onChange={(e) => update('borderRadius', Number(e.target.value))}
                 className="flex-1 h-1"
-                style={{ accentColor: '#d4a574' }}
+                style={{ accentColor: '#D97757' }}
               />
               <span className="text-[8px] font-mono w-8 text-right" style={{ color: 'rgba(255,255,255,0.3)' }}>
                 {overrides.borderRadius ?? 0}px
@@ -185,7 +185,7 @@ const PropertyEditor = () => {
                 value={overrides.padding ?? 0}
                 onChange={(e) => update('padding', Number(e.target.value))}
                 className="flex-1 h-1"
-                style={{ accentColor: '#d4a574' }}
+                style={{ accentColor: '#D97757' }}
               />
               <span className="text-[8px] font-mono w-8 text-right" style={{ color: 'rgba(255,255,255,0.3)' }}>
                 {overrides.padding ?? 0}px
@@ -208,7 +208,7 @@ const PropertyEditor = () => {
               value={(overrides.opacity ?? 1) * 100}
               onChange={(e) => update('opacity', Number(e.target.value) / 100)}
               className="flex-1 h-1"
-              style={{ accentColor: '#d4a574' }}
+              style={{ accentColor: '#D97757' }}
             />
             <span className="text-[8px] font-mono w-8 text-right" style={{ color: 'rgba(255,255,255,0.3)' }}>
               {Math.round((overrides.opacity ?? 1) * 100)}%

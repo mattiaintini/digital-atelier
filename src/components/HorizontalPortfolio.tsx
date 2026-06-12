@@ -88,7 +88,7 @@ function ProjectCard({ project }: { project: Project }) {
           transform: hovered ? 'scale(0.98)' : 'scale(1)',
           transition: 'transform 0.6s cubic-bezier(0.16,1,0.3,1)',
           boxShadow: hovered
-            ? '0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(212,165,116,0.08)'
+            ? '0 20px 60px rgba(0,0,0,0.5), 0 0 40px rgba(217,119,87,0.08)'
             : '0 10px 30px rgba(0,0,0,0.3)',
         }}
       >
@@ -114,7 +114,7 @@ function ProjectCard({ project }: { project: Project }) {
         <div
           className="absolute inset-0 pointer-events-none rounded-lg transition-opacity duration-500"
           style={{
-            border: '1px solid rgba(212,165,116,0.15)',
+            border: '1px solid rgba(217,119,87,0.15)',
             opacity: hovered ? 1 : 0,
           }}
         />
@@ -149,7 +149,7 @@ function ProjectCard({ project }: { project: Project }) {
           className="text-xs tracking-widest"
           style={{
             fontFamily: 'var(--font-body)',
-            color: 'rgba(212,165,116,0.8)',
+            color: 'rgba(217,119,87,0.8)',
           }}
         >
           {project.year}
@@ -210,7 +210,7 @@ const HorizontalPortfolio = () => {
           className="text-[11px] tracking-[0.4em] uppercase mb-3"
           style={{
             fontFamily: 'var(--font-body)',
-            color: 'rgba(212,165,116,0.45)',
+            color: 'rgba(217,119,87,0.45)',
             textShadow: '0 1px 6px rgba(0,0,0,0.5)',
           }}
         >
@@ -246,7 +246,7 @@ const HorizontalPortfolio = () => {
           className="text-[10px] tracking-[0.3em] uppercase"
           style={{
             fontFamily: 'var(--font-body)',
-            color: 'rgba(212,165,116,0.4)',
+            color: 'rgba(217,119,87,0.4)',
             textShadow: '0 1px 4px rgba(0,0,0,0.5)',
           }}
         >

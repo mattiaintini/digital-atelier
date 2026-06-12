@@ -68,7 +68,7 @@ const Navbar = () => {
               el?.scrollIntoView({ behavior: 'smooth' });
             }}
             className="text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em] uppercase"
-            style={{ color: '#d4a574', fontFamily: 'var(--font-display)', fontWeight: 400 }}
+            style={{ color: '#D97757', fontFamily: 'var(--font-display)', fontWeight: 400 }}
           >
             INTINI WEB ATELIER
           </button>
@@ -80,7 +80,7 @@ const Navbar = () => {
                 onClick={() => handleNav(item)}
                 className="text-xs tracking-[0.25em] uppercase transition-colors duration-300"
                 style={{ color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a574')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.85)')}
               >
                 {item.label}
@@ -90,18 +90,18 @@ const Navbar = () => {
               onClick={toggleLang}
               className="text-[10px] tracking-[0.2em] uppercase px-3 py-1.5 rounded-full transition-all duration-300"
               style={{
-                border: '1px solid rgba(212,165,116,0.3)',
-                color: '#d4a574',
+                border: '1px solid rgba(217,119,87,0.3)',
+                color: '#D97757',
                 fontFamily: 'var(--font-body)',
                 fontWeight: 400,
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(212,165,116,0.08)';
-                e.currentTarget.style.borderColor = 'rgba(212,165,116,0.8)';
+                e.currentTarget.style.background = 'rgba(217,119,87,0.08)';
+                e.currentTarget.style.borderColor = 'rgba(217,119,87,0.8)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'transparent';
-                e.currentTarget.style.borderColor = 'rgba(212,165,116,0.3)';
+                e.currentTarget.style.borderColor = 'rgba(217,119,87,0.3)';
               }}
             >
               {nextLangLabels[lang]}
@@ -113,8 +113,8 @@ const Navbar = () => {
               onClick={toggleLang}
               className="text-[10px] tracking-[0.15em] uppercase px-2.5 py-1 rounded-full"
               style={{
-                border: '1px solid rgba(212,165,116,0.3)',
-                color: '#d4a574',
+                border: '1px solid rgba(217,119,87,0.3)',
+                color: '#D97757',
                 fontFamily: 'var(--font-body)',
                 fontWeight: 400,
               }}
@@ -125,9 +125,9 @@ const Navbar = () => {
               className="flex flex-col gap-[5px] min-h-[44px] min-w-[44px] items-center justify-center relative z-[60]"
               onClick={() => setMobileOpen((v) => !v)}
             >
-              <span className="block w-5 h-px transition-all duration-300" style={{ background: '#d4a574', transform: mobileOpen ? 'rotate(45deg) translateY(3px)' : 'none' }} />
-              <span className="block w-5 h-px transition-all duration-300" style={{ background: '#d4a574', opacity: mobileOpen ? 0 : 1 }} />
-              <span className="block w-5 h-px transition-all duration-300" style={{ background: '#d4a574', transform: mobileOpen ? 'rotate(-45deg) translateY(-3px)' : 'none' }} />
+              <span className="block w-5 h-px transition-all duration-300" style={{ background: '#D97757', transform: mobileOpen ? 'rotate(45deg) translateY(3px)' : 'none' }} />
+              <span className="block w-5 h-px transition-all duration-300" style={{ background: '#D97757', opacity: mobileOpen ? 0 : 1 }} />
+              <span className="block w-5 h-px transition-all duration-300" style={{ background: '#D97757', transform: mobileOpen ? 'rotate(-45deg) translateY(-3px)' : 'none' }} />
             </button>
           </div>
         </div>
@@ -157,7 +157,7 @@ const Navbar = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + i * 0.06, duration: 0.4 }}
-                onTouchStart={(e) => (e.currentTarget.style.color = '#d4a574')}
+                onTouchStart={(e) => (e.currentTarget.style.color = '#D97757')}
                 onTouchEnd={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.7)')}
               >
                 {item.label}

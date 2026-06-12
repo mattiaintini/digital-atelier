@@ -34,8 +34,8 @@ const LayerTree = () => {
           className="w-full flex items-center gap-2 py-1.5 px-2 rounded text-left transition-all"
           style={{
             paddingLeft: 8 + depth * 12,
-            background: isSelected ? 'rgba(212,165,116,0.12)' : isHovered ? 'rgba(255,255,255,0.03)' : 'transparent',
-            borderLeft: isSelected ? '2px solid #d4a574' : '2px solid transparent',
+            background: isSelected ? 'rgba(217,119,87,0.12)' : isHovered ? 'rgba(255,255,255,0.03)' : 'transparent',
+            borderLeft: isSelected ? '2px solid #D97757' : '2px solid transparent',
           }}
           onClick={() => setSelected(el.id)}
           onMouseEnter={() => setHovered(el.id)}
@@ -43,7 +43,7 @@ const LayerTree = () => {
           whileHover={{ x: 2 }}
           transition={{ type: 'spring', stiffness: 400 }}
         >
-          <Icon size={10} style={{ color: isSelected ? '#d4a574' : 'rgba(255,255,255,0.25)', flexShrink: 0 }} />
+          <Icon size={10} style={{ color: isSelected ? '#D97757' : 'rgba(255,255,255,0.25)', flexShrink: 0 }} />
           <span
             className="text-[7px] tracking-[0.1em] truncate"
             style={{ color: isSelected ? '#ffffff' : 'rgba(255,255,255,0.35)' }}

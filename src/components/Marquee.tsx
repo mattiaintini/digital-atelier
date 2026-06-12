@@ -62,7 +62,7 @@ const Marquee = ({ offset = 0, direction = 'left' }: MarqueeProps) => {
         />
         <span
           className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-          style={{ background: 'rgba(212,165,116,0.25)' }}
+          style={{ background: 'rgba(217,119,87,0.25)' }}
         />
       </span>
     ));

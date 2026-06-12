@@ -33,9 +33,9 @@ const AboutSection = () => {
       const glowEls = sectionRef.current!.querySelectorAll('.about-glow');
       glowEls.forEach((el) => {
         gsap.fromTo(el,
-          { textShadow: '0 0 0px rgba(212,165,116,0)' },
+          { textShadow: '0 0 0px rgba(217,119,87,0)' },
           {
-            textShadow: '0 0 14px rgba(212,165,116,0.25), 0 0 30px rgba(212,165,116,0.08)',
+            textShadow: '0 0 14px rgba(217,119,87,0.25), 0 0 30px rgba(217,119,87,0.08)',
             duration: 1, ease: 'power2.inOut',
             scrollTrigger: { trigger: el, start: 'top 85%', end: 'top 35%', scrub: 1.5 },
           }
@@ -50,7 +50,7 @@ const AboutSection = () => {
       <div
         className="about-orb absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
-          background: 'radial-gradient(circle, rgba(212,165,116,0.05) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(217,119,87,0.05) 0%, transparent 70%)',
           filter: 'blur(80px)',
         }}
       />
@@ -58,7 +58,7 @@ const AboutSection = () => {
       <div className="relative z-10 max-w-3xl mx-auto">
         <p
           className="about-anim text-[10px] tracking-[0.5em] uppercase mb-6"
-          style={{ color: 'rgba(212,165,116,0.9)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
+          style={{ color: 'rgba(217,119,87,0.9)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
         >
           {t.about.label}
         </p>
@@ -77,21 +77,21 @@ const AboutSection = () => {
           {t.about.title2 && (
             <>
               <br />
-              <span style={{ color: '#d4a574' }}>{t.about.title2}</span>
+              <span style={{ color: '#D97757' }}>{t.about.title2}</span>
             </>
           )}
         </h2>
 
         <div
           className="about-anim h-px w-20 mb-8 md:mb-12"
-          style={{ background: 'linear-gradient(90deg, rgba(212,165,116,0.8), transparent)' }}
+          style={{ background: 'linear-gradient(90deg, rgba(217,119,87,0.8), transparent)' }}
         />
 
         <div
           className="about-anim p-5 md:p-8 rounded-xl space-y-5 md:space-y-6"
           style={{
-            background: 'rgba(212,165,116,0.03)',
-            border: '1px solid rgba(212,165,116,0.08)',
+            background: 'rgba(217,119,87,0.03)',
+            border: '1px solid rgba(217,119,87,0.08)',
             backdropFilter: 'blur(20px)',
           }}
         >
@@ -102,9 +102,9 @@ const AboutSection = () => {
             {t.about.p2}<span style={{ color: '#ffffff', fontWeight: 400 }}>{t.about.p2Bold}</span>{t.about.p2b}
           </p>
           <p className="text-xs md:text-[14px] leading-[2]" style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(220,218,214,0.78)' }}>
-            {t.about.p3}<span style={{ color: '#d4a574', fontWeight: 400 }}>{t.about.p3Bold}</span>{t.about.p3b}
+            {t.about.p3}<span style={{ color: '#D97757', fontWeight: 400 }}>{t.about.p3Bold}</span>{t.about.p3b}
           </p>
-          <div className="pt-4 mt-4" style={{ borderTop: '1px solid rgba(212,165,116,0.08)' }}>
+          <div className="pt-4 mt-4" style={{ borderTop: '1px solid rgba(217,119,87,0.08)' }}>
             <p
               className="italic"
               style={{

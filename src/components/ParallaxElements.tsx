@@ -15,16 +15,16 @@ interface ParticleConfig {
 }
 
 const particles: ParticleConfig[] = [
-  { size: 4, x: '12%', y: '15%', speed: -120, opacity: 0.4, color: '#d4a574' },
+  { size: 4, x: '12%', y: '15%', speed: -120, opacity: 0.4, color: '#D97757' },
   { size: 2, x: '85%', y: '25%', speed: -180, opacity: 0.25, color: '#ffffff' },
-  { size: 6, x: '70%', y: '45%', speed: -90, opacity: 0.15, color: '#d4a574', blur: 2 },
+  { size: 6, x: '70%', y: '45%', speed: -90, opacity: 0.15, color: '#D97757', blur: 2 },
   { size: 3, x: '25%', y: '60%', speed: -150, opacity: 0.3, color: '#ffffff' },
-  { size: 5, x: '90%', y: '70%', speed: -70, opacity: 0.12, color: '#d4a574', blur: 3 },
+  { size: 5, x: '90%', y: '70%', speed: -70, opacity: 0.12, color: '#D97757', blur: 3 },
   { size: 2, x: '45%', y: '80%', speed: -200, opacity: 0.2, color: '#ffffff' },
-  { size: 8, x: '8%', y: '50%', speed: -55, opacity: 0.08, color: '#d4a574', blur: 4 },
+  { size: 8, x: '8%', y: '50%', speed: -55, opacity: 0.08, color: '#D97757', blur: 4 },
   { size: 3, x: '55%', y: '35%', speed: -130, opacity: 0.18, color: '#ffffff' },
-  { size: 3, x: '35%', y: '20%', speed: -160, opacity: 0.15, color: '#d4a574', blur: 1 },
-  { size: 5, x: '78%', y: '55%', speed: -45, opacity: 0.1, color: '#d4a574', blur: 5 },
+  { size: 3, x: '35%', y: '20%', speed: -160, opacity: 0.15, color: '#D97757', blur: 1 },
+  { size: 5, x: '78%', y: '55%', speed: -45, opacity: 0.1, color: '#D97757', blur: 5 },
 ];
 
 const ParallaxElements = () => {

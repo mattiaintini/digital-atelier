@@ -9,7 +9,7 @@ const FooterReveal = () => {
     <footer
       className="relative z-10 px-4 md:px-16 py-8 md:py-12"
       style={{
-        background: 'linear-gradient(180deg, transparent 0%, rgba(212,165,116,0.02) 40%, rgba(212,165,116,0.04) 100%)',
+        background: 'linear-gradient(180deg, transparent 0%, rgba(217,119,87,0.02) 40%, rgba(217,119,87,0.04) 100%)',
         borderTop: '1px solid rgba(255,255,255,0.03)',
       }}
     >
@@ -22,7 +22,7 @@ const FooterReveal = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 text-center mb-6 md:mb-8">
           <div>
-            <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(212,165,116,0.8)' }}>
+            <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(217,119,87,0.8)' }}>
               {t.footer.sartoria}
             </p>
             <p className="text-xs md:text-sm leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
@@ -32,7 +32,7 @@ const FooterReveal = () => {
                 href="mailto:intiniwebatelier@gmail.com"
                 className="transition-colors duration-300 mt-1 inline-block"
                 style={{ color: 'rgba(255,255,255,0.78)' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a574')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.78)')}
               >
                 intiniwebatelier@gmail.com
@@ -41,7 +41,7 @@ const FooterReveal = () => {
           </div>
 
           <div>
-            <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(212,165,116,0.8)' }}>
+            <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(217,119,87,0.8)' }}>
               {t.footer.contatti}
             </p>
             <p className="text-xs md:text-sm leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
@@ -51,7 +51,7 @@ const FooterReveal = () => {
                 rel="noopener noreferrer"
                 className="transition-colors duration-300"
                 style={{ color: 'rgba(255,255,255,0.78)' }}
-                onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a574')}
+                onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.78)')}
               >
                 +39 334 541 5707 · WhatsApp
@@ -62,7 +62,7 @@ const FooterReveal = () => {
           </div>
 
           <div>
-            <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(212,165,116,0.8)' }}>
+            <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(217,119,87,0.8)' }}>
               {t.footer.datiLegali}
             </p>
             <p className="text-xs md:text-sm leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
@@ -79,7 +79,7 @@ const FooterReveal = () => {
             to="/privacy-policy"
             className="text-[9px] md:text-[10px] tracking-[0.2em] uppercase transition-colors duration-300"
             style={{ color: 'rgba(255,255,255,0.3)' }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a574')}
+            onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
             onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.3)')}
           >
             Privacy Policy
@@ -88,7 +88,7 @@ const FooterReveal = () => {
             to="/cookie-policy"
             className="text-[9px] md:text-[10px] tracking-[0.2em] uppercase transition-colors duration-300"
             style={{ color: 'rgba(255,255,255,0.3)' }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a574')}
+            onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
             onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.3)')}
           >
             Cookie Policy
@@ -97,7 +97,7 @@ const FooterReveal = () => {
             to="/termini-e-condizioni"
             className="text-[9px] md:text-[10px] tracking-[0.2em] uppercase transition-colors duration-300"
             style={{ color: 'rgba(255,255,255,0.3)' }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = '#d4a574')}
+            onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
             onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.3)')}
           >
             Termini e Condizioni

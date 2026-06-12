@@ -4,11 +4,11 @@ import { ArrowLeft } from 'lucide-react';
 const PrivacyPolicy = () => (
   <div className="min-h-screen bg-[#0a0a0a] text-white px-4 md:px-16 py-12">
     <div className="max-w-3xl mx-auto">
-      <Link to="/" className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase mb-10 transition-colors" style={{ color: 'rgba(212,165,116,0.6)' }}>
+      <Link to="/" className="inline-flex items-center gap-2 text-xs tracking-[0.2em] uppercase mb-10 transition-colors" style={{ color: 'rgba(217,119,87,0.6)' }}>
         <ArrowLeft size={14} /> Torna alla Home
       </Link>
 
-      <h1 className="text-2xl md:text-3xl mb-2" style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}>
+      <h1 className="text-2xl md:text-3xl mb-2" style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}>
         Informativa sulla Privacy
       </h1>
       <p className="text-[10px] tracking-[0.3em] uppercase mb-10" style={{ color: 'rgba(255,255,255,0.3)' }}>
@@ -22,16 +22,16 @@ const PrivacyPolicy = () => (
         </p>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Titolare del trattamento</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Titolare del trattamento</h2>
           <p>
             Intini Web Atelier<br />
-            Sito web: <a href="https://intiniwebatelier.com" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: '#d4a574' }}>intiniwebatelier.com</a><br />
-            Email: <a href="mailto:info@intiniwebatelier.com" className="underline" style={{ color: '#d4a574' }}>info@intiniwebatelier.com</a>
+            Sito web: <a href="https://intiniwebatelier.com" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: '#D97757' }}>intiniwebatelier.com</a><br />
+            Email: <a href="mailto:info@intiniwebatelier.com" className="underline" style={{ color: '#D97757' }}>info@intiniwebatelier.com</a>
           </p>
         </section>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Dati raccolti</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Dati raccolti</h2>
           <p>
             <strong>Dati di navigazione:</strong> durante la consultazione del sito vengono acquisiti automaticamente alcuni dati tecnici, tra cui indirizzo IP, tipo di browser, sistema operativo, pagine visitate e orari di accesso. Questi dati vengono utilizzati esclusivamente per finalità statistiche anonime e per garantire il corretto funzionamento del sito.
           </p>
@@ -41,7 +41,7 @@ const PrivacyPolicy = () => (
         </section>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Finalità e base giuridica del trattamento</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Finalità e base giuridica del trattamento</h2>
           <p>I dati sono trattati per le seguenti finalità:</p>
           <ul className="list-none mt-2 space-y-1">
             <li>— Funzionamento tecnico del sito (base giuridica: legittimo interesse)</li>
@@ -52,35 +52,35 @@ const PrivacyPolicy = () => (
         </section>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Condivisione dei dati</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Condivisione dei dati</h2>
           <p>
             I dati personali non vengono venduti a terzi. Potrebbero essere condivisi con fornitori di servizi tecnici (hosting, strumenti di analisi come Google Analytics) che trattano i dati in qualità di responsabili del trattamento, nel rispetto del GDPR.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Trasferimento dei dati extra-UE</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Trasferimento dei dati extra-UE</h2>
           <p>
             Alcuni servizi di terze parti (es. Google Analytics) potrebbero comportare il trasferimento dei dati verso paesi al di fuori dell'Unione Europea. In tali casi, il trasferimento avviene sulla base di garanzie adeguate previste dal GDPR.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Periodo di conservazione</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Periodo di conservazione</h2>
           <p>
             I dati di navigazione vengono conservati per il tempo strettamente necessario alle finalità per cui sono raccolti. I dati forniti tramite moduli di contatto sono conservati per il tempo necessario a gestire la richiesta e comunque non oltre 24 mesi.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Diritti dell'utente</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Diritti dell'utente</h2>
           <p>
-            L'utente ha il diritto di accedere ai propri dati, richiederne la rettifica o la cancellazione, limitare il trattamento, opporsi al trattamento e richiedere la portabilità dei dati. Per esercitare questi diritti è possibile scrivere a <a href="mailto:info@intiniwebatelier.com" className="underline" style={{ color: '#d4a574' }}>info@intiniwebatelier.com</a>. L'utente ha inoltre il diritto di proporre reclamo al Garante per la Protezione dei Dati Personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: '#d4a574' }}>www.garanteprivacy.it</a>).
+            L'utente ha il diritto di accedere ai propri dati, richiederne la rettifica o la cancellazione, limitare il trattamento, opporsi al trattamento e richiedere la portabilità dei dati. Per esercitare questi diritti è possibile scrivere a <a href="mailto:info@intiniwebatelier.com" className="underline" style={{ color: '#D97757' }}>info@intiniwebatelier.com</a>. L'utente ha inoltre il diritto di proporre reclamo al Garante per la Protezione dei Dati Personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: '#D97757' }}>www.garanteprivacy.it</a>).
           </p>
         </section>
 
         <section>
-          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(212,165,116,0.7)' }}>Modifiche a questa informativa</h2>
+          <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>Modifiche a questa informativa</h2>
           <p>
             Il Titolare si riserva il diritto di modificare la presente informativa in qualsiasi momento. La data dell'ultimo aggiornamento è indicata in alto.
           </p>

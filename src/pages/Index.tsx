@@ -128,16 +128,16 @@ const Index = () => {
               className="w-fit px-4 py-3 text-[9px] md:text-[10px] tracking-[0.15em] uppercase rounded-full transition-all duration-300 min-h-[44px]"
               style={{
                 background: 'transparent',
-                border: '1px solid rgba(212,165,116,0.3)',
-                color: '#d4a574',
+                border: '1px solid rgba(217,119,87,0.3)',
+                color: '#D97757',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(212,165,116,0.08)';
-                e.currentTarget.style.borderColor = 'rgba(212,165,116,0.5)';
+                e.currentTarget.style.background = 'rgba(217,119,87,0.08)';
+                e.currentTarget.style.borderColor = 'rgba(217,119,87,0.5)';
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.background = 'transparent';
-                e.currentTarget.style.borderColor = 'rgba(212,165,116,0.3)';
+                e.currentTarget.style.borderColor = 'rgba(217,119,87,0.3)';
               }}
             >
               {t.contact.cta}

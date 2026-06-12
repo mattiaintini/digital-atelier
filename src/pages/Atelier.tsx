@@ -41,7 +41,7 @@ const Atelier = () => {
         {/* Bottom status bar */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-5">
           <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#d4a574' }} />
+            <div className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: '#D97757' }} />
             <span className="text-[8px] tracking-[0.3em] uppercase" style={{ color: 'rgba(255,255,255,0.2)' }}>
               CANVAS ATTIVO
             </span>
@@ -66,13 +66,13 @@ const Atelier = () => {
               onClick={() => setShowPaywall(true)}
               className="pointer-events-auto px-10 py-4 text-[10px] tracking-[0.35em] uppercase rounded-lg"
               style={{
-                background: 'linear-gradient(135deg, rgba(212,165,116,0.15), rgba(212,165,116,0.05))',
-                border: '1px solid rgba(212,165,116,0.4)',
-                color: '#d4a574',
+                background: 'linear-gradient(135deg, rgba(217,119,87,0.15), rgba(217,119,87,0.05))',
+                border: '1px solid rgba(217,119,87,0.4)',
+                color: '#D97757',
                 backdropFilter: 'blur(20px)',
-                boxShadow: '0 0 60px rgba(212,165,116,0.1)',
+                boxShadow: '0 0 60px rgba(217,119,87,0.1)',
               }}
-              whileHover={{ scale: 1.03, boxShadow: '0 0 80px rgba(212,165,116,0.2)' }}
+              whileHover={{ scale: 1.03, boxShadow: '0 0 80px rgba(217,119,87,0.2)' }}
               whileTap={{ scale: 0.98 }}
             >
               SBLOCCA L'ATELIER — €9,90

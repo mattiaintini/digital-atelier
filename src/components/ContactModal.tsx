@@ -112,8 +112,8 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
 
             {success ? (
               <div className="text-center py-8">
-                <CheckCircle size={48} className="mx-auto mb-4" style={{ color: '#d4a574' }} />
-                <h3 className="text-lg mb-2" style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}>
+                <CheckCircle size={48} className="mx-auto mb-4" style={{ color: '#D97757' }} />
+                <h3 className="text-lg mb-2" style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}>
                   {t.contact.successTitle}
                 </h3>
                 <p className="text-sm" style={{ color: 'rgba(255,255,255,0.82)' }}>
@@ -122,7 +122,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
               </div>
             ) : (
               <>
-                <h2 className="text-xl mb-1" style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}>{t.contact.title}</h2>
+                <h2 className="text-xl mb-1" style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}>{t.contact.title}</h2>
                 <p className="text-[9px] tracking-[0.2em] uppercase mb-6" style={{ color: 'rgba(255,255,255,0.72)' }}>
                   {t.contact.subtitle}
                 </p>
@@ -166,10 +166,10 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                       id="privacy-consent"
                       checked={privacy}
                       onCheckedChange={(checked) => setPrivacy(checked === true)}
-                      className="mt-0.5 border-white/20 data-[state=checked]:bg-[#d4a574] data-[state=checked]:border-[#d4a574]"
+                      className="mt-0.5 border-white/20 data-[state=checked]:bg-[#D97757] data-[state=checked]:border-[#D97757]"
                     />
                     <label htmlFor="privacy-consent" className="text-[10px] leading-[1.6] cursor-pointer" style={{ color: 'rgba(255,255,255,0.82)' }}>
-                      Ho letto e accetto l'<Link to="/privacy-policy" target="_blank" className="underline" style={{ color: '#d4a574' }} onClick={(e) => e.stopPropagation()}>Informativa sulla Privacy</Link> ai sensi del Reg. UE 2016/679 (GDPR). *
+                      Ho letto e accetto l'<Link to="/privacy-policy" target="_blank" className="underline" style={{ color: '#D97757' }} onClick={(e) => e.stopPropagation()}>Informativa sulla Privacy</Link> ai sensi del Reg. UE 2016/679 (GDPR). *
                     </label>
                   </div>
 
@@ -177,7 +177,7 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                     type="submit"
                     disabled={loading}
                     className="w-full py-3.5 rounded-lg text-[10px] tracking-[0.3em] uppercase min-h-[48px]"
-                    style={{ background: 'linear-gradient(135deg, rgba(212,165,116,0.2), rgba(212,165,116,0.08))', border: '1px solid rgba(212,165,116,0.4)', color: '#d4a574' }}
+                    style={{ background: 'linear-gradient(135deg, rgba(217,119,87,0.2), rgba(217,119,87,0.08))', border: '1px solid rgba(217,119,87,0.4)', color: '#D97757' }}
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

@@ -182,9 +182,9 @@ const LiveSitePreview = () => {
           onClick={() => setViewMode('desktop')}
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[8px] tracking-[0.2em] uppercase transition-all"
           style={{
-            background: isDesktop ? 'rgba(212,165,116,0.12)' : 'transparent',
-            border: `1px solid ${isDesktop ? 'rgba(212,165,116,0.3)' : 'rgba(255,255,255,0.06)'}`,
-            color: isDesktop ? '#d4a574' : 'rgba(255,255,255,0.25)',
+            background: isDesktop ? 'rgba(217,119,87,0.12)' : 'transparent',
+            border: `1px solid ${isDesktop ? 'rgba(217,119,87,0.3)' : 'rgba(255,255,255,0.06)'}`,
+            color: isDesktop ? '#D97757' : 'rgba(255,255,255,0.25)',
           }}
         >
           <Monitor size={12} /> Desktop
@@ -193,15 +193,15 @@ const LiveSitePreview = () => {
           onClick={() => setViewMode('mobile')}
           className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-[8px] tracking-[0.2em] uppercase transition-all"
           style={{
-            background: !isDesktop ? 'rgba(212,165,116,0.12)' : 'transparent',
-            border: `1px solid ${!isDesktop ? 'rgba(212,165,116,0.3)' : 'rgba(255,255,255,0.06)'}`,
-            color: !isDesktop ? '#d4a574' : 'rgba(255,255,255,0.25)',
+            background: !isDesktop ? 'rgba(217,119,87,0.12)' : 'transparent',
+            border: `1px solid ${!isDesktop ? 'rgba(217,119,87,0.3)' : 'rgba(255,255,255,0.06)'}`,
+            color: !isDesktop ? '#D97757' : 'rgba(255,255,255,0.25)',
           }}
         >
           <Smartphone size={12} /> Mobile
         </motion.button>
         <div className="w-[1px] h-4 mx-1" style={{ background: 'rgba(255,255,255,0.06)' }} />
-        <motion.span key={templateName} className="text-[8px] tracking-[0.3em] uppercase" style={{ color: 'rgba(212,165,116,0.5)' }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <motion.span key={templateName} className="text-[8px] tracking-[0.3em] uppercase" style={{ color: 'rgba(217,119,87,0.5)' }} initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           {templateName}
         </motion.span>
       </div>

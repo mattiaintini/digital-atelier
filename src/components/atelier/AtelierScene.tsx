@@ -12,7 +12,7 @@ function getMaterial(type: MaterialType) {
     case 'frosted-glass':
       return <meshPhysicalMaterial color="#ffffff" metalness={0} roughness={0.15} transmission={0.9} thickness={0.5} ior={1.5} transparent opacity={0.7} envMapIntensity={1.5} />;
     case 'gold':
-      return <meshPhysicalMaterial color="#d4a574" metalness={1} roughness={0.15} clearcoat={0.5} clearcoatRoughness={0.2} envMapIntensity={2.5} />;
+      return <meshPhysicalMaterial color="#D97757" metalness={1} roughness={0.15} clearcoat={0.5} clearcoatRoughness={0.2} envMapIntensity={2.5} />;
     case 'marble':
       return <meshPhysicalMaterial color="#f0ede8" metalness={0.05} roughness={0.3} clearcoat={0.8} clearcoatRoughness={0.15} envMapIntensity={1.2} />;
     case 'carbon':
@@ -148,7 +148,7 @@ function ModuleParticles() {
       <bufferGeometry>
         <bufferAttribute attach="attributes-position" array={positions} count={positions.length / 3} itemSize={3} />
       </bufferGeometry>
-      <pointsMaterial size={0.012} color="#d4a574" transparent opacity={0.5} sizeAttenuation blending={THREE.AdditiveBlending} depthWrite={false} />
+      <pointsMaterial size={0.012} color="#D97757" transparent opacity={0.5} sizeAttenuation blending={THREE.AdditiveBlending} depthWrite={false} />
     </points>
   );
 }
@@ -159,7 +159,7 @@ function SimpleLighting() {
     <>
       <spotLight position={[4, 6, 3]} intensity={2.5} angle={0.35} penumbra={0.9} color="#fff5e6" castShadow shadow-mapSize={1024} />
       <spotLight position={[-5, 4, 2]} intensity={1.2} angle={0.4} penumbra={1} color="#d4e5ff" />
-      <spotLight position={[0, 3, -5]} intensity={1.8} angle={0.5} penumbra={0.8} color="#d4a574" />
+      <spotLight position={[0, 3, -5]} intensity={1.8} angle={0.5} penumbra={0.8} color="#D97757" />
       <spotLight position={[-6, 2, -2]} intensity={0.6} angle={0.3} penumbra={1} color="#ffffff" />
       <spotLight position={[6, 2, -2]} intensity={0.6} angle={0.3} penumbra={1} color="#ffffff" />
       <pointLight position={[0, -2, 0]} intensity={0.15} color="#1a1a2e" />

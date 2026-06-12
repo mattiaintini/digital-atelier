@@ -34,13 +34,13 @@ const LanguageGate = () => {
             <div className="text-center mb-2">
               <p
                 className="text-[10px] md:text-xs tracking-[0.5em] uppercase mb-3"
-                style={{ color: 'rgba(212,165,116,0.55)', fontFamily: 'var(--font-body)' }}
+                style={{ color: 'rgba(217,119,87,0.55)', fontFamily: 'var(--font-body)' }}
               >
                 INTINI WEB ATELIER
               </p>
               <div
                 className="w-12 h-px mx-auto"
-                style={{ background: 'linear-gradient(90deg, transparent, rgba(212,165,116,0.3), transparent)' }}
+                style={{ background: 'linear-gradient(90deg, transparent, rgba(217,119,87,0.3), transparent)' }}
               />
             </div>
 
@@ -66,7 +66,7 @@ const LanguageGate = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.4 + i * 0.1, ease: [0.22, 1, 0.36, 1] }}
                   whileHover={{
-                    background: 'rgba(212,165,116,0.04)',
+                    background: 'rgba(217,119,87,0.04)',
                   }}
                   whileTap={{ scale: 0.98 }}
                 >
@@ -74,12 +74,12 @@ const LanguageGate = () => {
                   <div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
-                      background: 'linear-gradient(90deg, transparent 0%, rgba(212,165,116,0.03) 50%, transparent 100%)',
+                      background: 'linear-gradient(90deg, transparent 0%, rgba(217,119,87,0.03) 50%, transparent 100%)',
                     }}
                   />
                   <div className="relative flex flex-col items-center gap-0.5">
                     <span
-                      className="text-sm md:text-base tracking-[0.25em] uppercase transition-colors duration-300 group-hover:text-[#d4a574]"
+                      className="text-sm md:text-base tracking-[0.25em] uppercase transition-colors duration-300 group-hover:text-[#D97757]"
                       style={{
                         color: 'rgba(255,255,255,0.8)',
                         fontFamily: 'var(--font-display)',
@@ -91,7 +91,7 @@ const LanguageGate = () => {
                     <span
                       className="text-[9px] tracking-[0.2em] uppercase transition-colors duration-300"
                       style={{
-                        color: 'rgba(212,165,116,0.5)',
+                        color: 'rgba(217,119,87,0.5)',
                         fontFamily: 'var(--font-body)',
                         fontWeight: 300,
                       }}
@@ -106,7 +106,7 @@ const LanguageGate = () => {
             {/* Bottom accent */}
             <div
               className="w-8 h-px mt-4"
-              style={{ background: 'linear-gradient(90deg, transparent, rgba(212,165,116,0.2), transparent)' }}
+              style={{ background: 'linear-gradient(90deg, transparent, rgba(217,119,87,0.2), transparent)' }}
             />
           </motion.div>
         </motion.div>

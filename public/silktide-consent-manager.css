@@ -12,13 +12,13 @@
 #silktide-wrapper {
               --focus: 0 0 0 2px #ffffff, 0 0 0 4px #000000, 0 0 0 6px #ffffff;
               --boxShadow: -5px 5px 10px 0px #00000012, 0px 0px 50px 0px #0000001a;
-              --fontFamily: Helvetica Neue, Segoe UI, Arial, sans-serif;
-              --primaryColor: #977a2b;
+              --fontFamily: Inter, Helvetica Neue, Segoe UI, Arial, sans-serif;
+              --primaryColor: #D97757;
               --backgroundColor: #121212;
               --textColor: #8C8A87;
               --backdropBackgroundColor: #1a191933;
               --backdropBackgroundBlur: 0px;
-              --cookieIconColor: #977A2B;
+              --cookieIconColor: #D97757;
               --cookieIconBackgroundColor: #121212;
               position: fixed;
   bottom: 0;

@@ -70,13 +70,13 @@ const AtelierPaywall = () => {
         {/* Top accent line */}
         <motion.div
           className="w-12 h-[1px] mx-auto mb-10"
-          style={{ background: 'linear-gradient(90deg, transparent, #d4a574, transparent)' }}
+          style={{ background: 'linear-gradient(90deg, transparent, #D97757, transparent)' }}
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 0.6, duration: 1 }}
         />
 
-        <p className="text-center tracking-[0.4em] text-[10px] uppercase mb-3" style={{ color: '#d4a574' }}>
+        <p className="text-center tracking-[0.4em] text-[10px] uppercase mb-3" style={{ color: '#D97757' }}>
           INTINI SYSTEM DIGITAL
         </p>
 
@@ -106,7 +106,7 @@ const AtelierPaywall = () => {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="nome@dominio.com"
             className="w-full bg-transparent text-white text-sm py-3 border-b outline-none transition-colors duration-300 placeholder:text-white/15"
-            style={{ borderColor: email ? '#d4a574' : 'rgba(255,255,255,0.1)' }}
+            style={{ borderColor: email ? '#D97757' : 'rgba(255,255,255,0.1)' }}
             onKeyDown={(e) => e.key === 'Enter' && checkAccess()}
           />
 
@@ -125,11 +125,11 @@ const AtelierPaywall = () => {
               disabled={!email || loading || checking}
               className="relative px-8 py-3 text-[10px] tracking-[0.3em] uppercase overflow-hidden disabled:opacity-30 transition-opacity"
               style={{
-                border: '1px solid rgba(212,165,116,0.4)',
-                color: '#d4a574',
-                background: 'rgba(212,165,116,0.05)',
+                border: '1px solid rgba(217,119,87,0.4)',
+                color: '#D97757',
+                background: 'rgba(217,119,87,0.05)',
               }}
-              whileHover={{ scale: 1.02, background: 'rgba(212,165,116,0.1)' }}
+              whileHover={{ scale: 1.02, background: 'rgba(217,119,87,0.1)' }}
               whileTap={{ scale: 0.98 }}
             >
               {loading || checking ? (

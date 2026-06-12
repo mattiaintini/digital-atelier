@@ -35,7 +35,7 @@ const CookieBanner = () => {
         style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
       >
         {t.cookie.text}{' '}
-        <Link to="/cookie-policy" className="underline" style={{ color: '#d4a574' }}>{t.cookie.policy}</Link>.
+        <Link to="/cookie-policy" className="underline" style={{ color: '#D97757' }}>{t.cookie.policy}</Link>.
       </p>
       <div className="flex gap-3">
         <button
@@ -43,18 +43,18 @@ const CookieBanner = () => {
           className="flex-1 rounded-md text-[10px] tracking-[0.15em] uppercase py-2.5 px-4 transition-all duration-300"
           style={{
             background: 'transparent',
-            border: '1px solid rgba(212,165,116,0.35)',
-            color: '#d4a574',
+            border: '1px solid rgba(217,119,87,0.35)',
+            color: '#D97757',
             fontFamily: 'var(--font-body)',
             fontWeight: 400,
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = 'rgba(212,165,116,0.1)';
-            e.currentTarget.style.borderColor = 'rgba(212,165,116,0.6)';
+            e.currentTarget.style.background = 'rgba(217,119,87,0.1)';
+            e.currentTarget.style.borderColor = 'rgba(217,119,87,0.6)';
           }}
           onMouseLeave={(e) => {
             e.currentTarget.style.background = 'transparent';
-            e.currentTarget.style.borderColor = 'rgba(212,165,116,0.35)';
+            e.currentTarget.style.borderColor = 'rgba(217,119,87,0.35)';
           }}
         >
            {t.cookie.acceptAll}

@@ -86,7 +86,7 @@ export const templates: TemplateOption[] = [
   { id: 'salon', name: 'IL SALONE', description: 'Landing page conversazionale con sezioni animate e form immersivo', tags: ['LANDING', 'CONVERSIONE', 'MINIMAL'], previewGradient: 'linear-gradient(135deg, #0a1a0a, #1a2e1a, #0a0a0a)' },
   { id: 'galleria', name: 'LA GALLERIA', description: 'Showcase fotografico orizzontale con transizioni fluide tra progetti', tags: ['FOTOGRAFIA', 'ORIZZONTALE', 'ARTE'], previewGradient: 'linear-gradient(135deg, #0a0a1a, #1a1a3e, #0a0a0a)' },
   { id: 'attico', name: "L'ATTICO", description: 'Sito corporate multi-pagina con dashboard interna e area riservata', tags: ['CORPORATE', 'MULTI-PAGINA', 'DASHBOARD'], previewGradient: 'linear-gradient(135deg, #1a1a0a, #2e2e1a, #0a0a0a)' },
-  { id: 'bespoke', name: 'SU MISURA', description: 'Architettura completamente personalizzata — nessun template, solo la tua visione', tags: ['CUSTOM', 'ILLIMITATO', 'UNICO'], previewGradient: 'linear-gradient(135deg, #d4a57415, #0a0a0a, #d4a57410)' },
+  { id: 'bespoke', name: 'SU MISURA', description: 'Architettura completamente personalizzata — nessun template, solo la tua visione', tags: ['CUSTOM', 'ILLIMITATO', 'UNICO'], previewGradient: 'linear-gradient(135deg, #D9775715, #0a0a0a, #D9775710)' },
 ];
 
 export const palettes: PaletteOption[] = [

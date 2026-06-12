@@ -41,9 +41,9 @@ const FloatingButler = () => {
               href="mailto:intiniwebatelier@gmail.com"
               className="flex items-center gap-2.5 pl-4 pr-5 py-2.5 rounded-full text-[10px] tracking-[0.15em] uppercase whitespace-nowrap transition-all duration-300 hover:scale-105"
               style={{
-                background: 'rgba(212,165,116,0.06)',
-                border: '1px solid rgba(212,165,116,0.2)',
-                color: '#d4a574',
+                background: 'rgba(217,119,87,0.06)',
+                border: '1px solid rgba(217,119,87,0.2)',
+                color: '#D97757',
                 backdropFilter: 'blur(20px)',
               }}
             >
@@ -60,10 +60,10 @@ const FloatingButler = () => {
         style={{
           background: open
             ? 'rgba(255,255,255,0.05)'
-            : 'rgba(212,165,116,0.08)',
-          border: `1px solid ${open ? 'rgba(255,255,255,0.08)' : 'rgba(212,165,116,0.25)'}`,
+            : 'rgba(217,119,87,0.08)',
+          border: `1px solid ${open ? 'rgba(255,255,255,0.08)' : 'rgba(217,119,87,0.25)'}`,
           backdropFilter: 'blur(20px)',
-          color: open ? 'rgba(255,255,255,0.5)' : '#d4a574',
+          color: open ? 'rgba(255,255,255,0.5)' : '#D97757',
           boxShadow: '0 8px 40px rgba(0,0,0,0.5)',
         }}
         whileHover={{ scale: 1.06 }}

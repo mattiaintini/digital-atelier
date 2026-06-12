@@ -106,7 +106,7 @@ const Admin = () => {
     <div className="min-h-screen" style={{ background: '#050505' }}>
       {/* Header */}
       <div className="flex items-center justify-between px-6 py-4" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
-        <h1 className="text-lg" style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}>Admin Dashboard</h1>
+        <h1 className="text-lg" style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}>Admin Dashboard</h1>
         <div className="flex items-center gap-3">
           <button onClick={() => navigate('/')} className="text-[9px] tracking-[0.2em] uppercase px-3 py-1.5 rounded-lg" style={{ color: 'rgba(255,255,255,0.3)', border: '1px solid rgba(255,255,255,0.08)' }}>
             Sito
@@ -128,14 +128,14 @@ const Admin = () => {
             onClick={() => setTab(t.id)}
             className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-[9px] tracking-[0.2em] uppercase transition-all"
             style={{
-              background: tab === t.id ? 'rgba(212,165,116,0.08)' : 'transparent',
-              border: `1px solid ${tab === t.id ? 'rgba(212,165,116,0.25)' : 'rgba(255,255,255,0.06)'}`,
-              color: tab === t.id ? '#d4a574' : 'rgba(255,255,255,0.3)',
+              background: tab === t.id ? 'rgba(217,119,87,0.08)' : 'transparent',
+              border: `1px solid ${tab === t.id ? 'rgba(217,119,87,0.25)' : 'rgba(255,255,255,0.06)'}`,
+              color: tab === t.id ? '#D97757' : 'rgba(255,255,255,0.3)',
             }}
           >
             <t.icon size={12} /> {t.label}
             {t.badge ? (
-              <span className="ml-1 px-1.5 py-0.5 rounded-full text-[7px]" style={{ background: '#d4a574', color: '#000' }}>{t.badge}</span>
+              <span className="ml-1 px-1.5 py-0.5 rounded-full text-[7px]" style={{ background: '#D97757', color: '#000' }}>{t.badge}</span>
             ) : null}
           </button>
         ))}
@@ -154,8 +154,8 @@ const Admin = () => {
                 key={sub.id}
                 className="p-4 rounded-xl"
                 style={{
-                  background: sub.is_read ? 'rgba(255,255,255,0.02)' : 'rgba(212,165,116,0.04)',
-                  border: `1px solid ${sub.is_read ? 'rgba(255,255,255,0.05)' : 'rgba(212,165,116,0.15)'}`,
+                  background: sub.is_read ? 'rgba(255,255,255,0.02)' : 'rgba(217,119,87,0.04)',
+                  border: `1px solid ${sub.is_read ? 'rgba(255,255,255,0.05)' : 'rgba(217,119,87,0.15)'}`,
                 }}
                 initial={{ opacity: 0, y: 5 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -170,7 +170,7 @@ const Admin = () => {
                       {new Date(sub.created_at).toLocaleDateString('it-IT')}
                     </span>
                     <button onClick={() => toggleRead(sub.id, sub.is_read)} title={sub.is_read ? 'Segna come non letto' : 'Segna come letto'}>
-                      {sub.is_read ? <MailOpen size={12} style={{ color: 'rgba(255,255,255,0.2)' }} /> : <Mail size={12} style={{ color: '#d4a574' }} />}
+                      {sub.is_read ? <MailOpen size={12} style={{ color: 'rgba(255,255,255,0.2)' }} /> : <Mail size={12} style={{ color: '#D97757' }} />}
                     </button>
                   </div>
                 </div>
@@ -185,7 +185,7 @@ const Admin = () => {
               <p className="text-[9px] tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(255,255,255,0.3)' }}>NUOVA FAQ</p>
               <input type="text" value={newQuestion} onChange={(e) => setNewQuestion(e.target.value)} placeholder="Domanda" className="w-full text-white text-sm py-2 px-3 rounded-lg outline-none mb-2" style={inputStyle} />
               <textarea value={newAnswer} onChange={(e) => setNewAnswer(e.target.value)} placeholder="Risposta" rows={3} className="w-full text-white text-sm py-2 px-3 rounded-lg outline-none resize-none mb-2" style={inputStyle} />
-              <motion.button onClick={addFaq} className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-[9px] tracking-[0.2em] uppercase" style={{ background: 'rgba(212,165,116,0.1)', border: '1px solid rgba(212,165,116,0.3)', color: '#d4a574' }} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <motion.button onClick={addFaq} className="flex items-center gap-1.5 px-4 py-2 rounded-lg text-[9px] tracking-[0.2em] uppercase" style={{ background: 'rgba(217,119,87,0.1)', border: '1px solid rgba(217,119,87,0.3)', color: '#D97757' }} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Plus size={10} /> AGGIUNGI
               </motion.button>
             </div>
@@ -197,7 +197,7 @@ const Admin = () => {
                   <p className="text-sm mb-1" style={{ color: '#fff' }}>{faq.question}</p>
                   <p className="text-[11px]" style={{ color: 'rgba(255,255,255,0.35)' }}>{faq.answer}</p>
                 </div>
-                <button onClick={() => toggleFaqActive(faq.id, faq.is_active)} className="text-[8px] tracking-[0.15em] uppercase px-2 py-1 rounded" style={{ border: '1px solid rgba(255,255,255,0.1)', color: faq.is_active ? '#d4a574' : 'rgba(255,255,255,0.2)' }}>
+                <button onClick={() => toggleFaqActive(faq.id, faq.is_active)} className="text-[8px] tracking-[0.15em] uppercase px-2 py-1 rounded" style={{ border: '1px solid rgba(255,255,255,0.1)', color: faq.is_active ? '#D97757' : 'rgba(255,255,255,0.2)' }}>
                   {faq.is_active ? 'Attiva' : 'Disattiva'}
                 </button>
               </div>

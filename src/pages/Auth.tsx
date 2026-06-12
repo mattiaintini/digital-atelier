@@ -71,7 +71,7 @@ const Auth = () => {
       >
         <h1
           className="text-2xl text-center mb-8"
-          style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}
+          style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}
         >
           {isLogin ? 'Accedi' : 'Registrati'}
         </h1>
@@ -123,9 +123,9 @@ const Auth = () => {
             disabled={loading}
             className="w-full py-3 rounded-lg text-[10px] tracking-[0.3em] uppercase transition-all"
             style={{
-              background: 'linear-gradient(135deg, rgba(212,165,116,0.2), rgba(212,165,116,0.08))',
-              border: '1px solid rgba(212,165,116,0.4)',
-              color: '#d4a574',
+              background: 'linear-gradient(135deg, rgba(217,119,87,0.2), rgba(217,119,87,0.08))',
+              border: '1px solid rgba(217,119,87,0.4)',
+              color: '#D97757',
             }}
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}

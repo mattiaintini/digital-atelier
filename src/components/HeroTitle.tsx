@@ -48,13 +48,13 @@ const HeroTitle = ({ visible }: HeroTitleProps) => {
       >
         <p
           className="text-[8px] tracking-[0.4em] uppercase"
-          style={{ color: 'rgba(212,165,116,0.85)', fontFamily: 'var(--font-body)' }}
+          style={{ color: 'rgba(217,119,87,0.85)', fontFamily: 'var(--font-body)' }}
         >
           Scroll
         </p>
         <div
           className="w-px h-8 animate-pulse"
-          style={{ background: 'linear-gradient(to bottom, rgba(212,165,116,0.4), transparent)' }}
+          style={{ background: 'linear-gradient(to bottom, rgba(217,119,87,0.4), transparent)' }}
         />
       </div>
     </div>

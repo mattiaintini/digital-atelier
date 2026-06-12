@@ -67,7 +67,7 @@ export function EditableElement({ id, type, label, parentId, children, className
       className={`${className} transition-all duration-150`}
       style={{
         ...appliedStyle,
-        outline: isSelected ? '2px solid #d4a574' : isHovered ? '1px dashed rgba(212,165,116,0.4)' : 'none',
+        outline: isSelected ? '2px solid #D97757' : isHovered ? '1px dashed rgba(217,119,87,0.4)' : 'none',
         outlineOffset: isSelected ? 1 : 0,
         cursor: 'pointer',
       }}
@@ -90,7 +90,7 @@ export function EditableElement({ id, type, label, parentId, children, className
             <span
               className="text-[6px] tracking-[0.15em] uppercase px-1.5 py-0.5 rounded"
               style={{
-                background: isSelected ? '#d4a574' : 'rgba(212,165,116,0.7)',
+                background: isSelected ? '#D97757' : 'rgba(217,119,87,0.7)',
                 color: '#000',
               }}
             >
@@ -107,7 +107,7 @@ export function EditableElement({ id, type, label, parentId, children, className
             className="absolute -top-9 left-1/2 -translate-x-1/2 z-50 flex items-center gap-0.5 rounded-lg px-1 py-0.5"
             style={{
               background: 'rgba(20,20,20,0.95)',
-              border: '1px solid rgba(212,165,116,0.3)',
+              border: '1px solid rgba(217,119,87,0.3)',
               backdropFilter: 'blur(10px)',
               boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
             }}
@@ -128,7 +128,7 @@ export function EditableElement({ id, type, label, parentId, children, className
                 title={tip}
                 onClick={(e) => e.stopPropagation()}
               >
-                <Icon size={10} style={{ color: '#d4a574' }} />
+                <Icon size={10} style={{ color: '#D97757' }} />
               </button>
             ))}
           </motion.div>

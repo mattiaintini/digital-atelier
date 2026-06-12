@@ -66,8 +66,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <div
         className="absolute inset-0 rounded-2xl transition-all duration-500 pointer-events-none"
         style={{
-          border: `1px solid ${hovered ? 'rgba(212,165,116,0.3)' : 'rgba(255,255,255,0.06)'}`,
-          boxShadow: hovered ? '0 0 40px rgba(212,165,116,0.08)' : 'none',
+          border: `1px solid ${hovered ? 'rgba(217,119,87,0.3)' : 'rgba(255,255,255,0.06)'}`,
+          boxShadow: hovered ? '0 0 40px rgba(217,119,87,0.08)' : 'none',
         }}
       />
       <div className="absolute top-4 left-4 z-10 flex items-center gap-2">
@@ -149,7 +149,7 @@ const PortfolioSection = () => {
       <div ref={headingRef} className="max-w-5xl mx-auto text-center mb-12 md:mb-20 px-4 md:px-16">
         <p
           className="text-[10px] md:text-[11px] tracking-[0.5em] uppercase mb-4 md:mb-5"
-          style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.8)' }}
+          style={{ fontFamily: 'var(--font-body)', color: 'rgba(217,119,87,0.8)' }}
         >
           {t.portfolio.label}
         </p>

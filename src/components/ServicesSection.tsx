@@ -109,7 +109,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
         <div className="text-center mb-16 md:mb-24">
           <p
             className="text-[10px] md:text-[11px] tracking-[0.5em] uppercase mb-4"
-            style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.9)' }}
+            style={{ fontFamily: 'var(--font-body)', color: 'rgba(217,119,87,0.9)' }}
           >
             {lang === 'it' ? 'Cosa Offriamo' : 'What We Offer'}
           </p>
@@ -145,11 +145,11 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                 <div className="flex items-center gap-3">
                   <span
                     className="text-[10px] tracking-[0.3em] uppercase"
-                    style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.8)' }}
+                    style={{ fontFamily: 'var(--font-body)', color: 'rgba(217,119,87,0.8)' }}
                   >
                     0{i + 1}
                   </span>
-                  <pkg.icon size={20} style={{ color: '#d4a574', opacity: 0.6 }} />
+                  <pkg.icon size={20} style={{ color: '#D97757', opacity: 0.6 }} />
                 </div>
 
                 <h3
@@ -160,7 +160,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                 </h3>
                 <p
                   className="text-[10px] tracking-[0.3em] uppercase mb-2"
-                  style={{ color: 'rgba(212,165,116,0.9)', fontFamily: 'var(--font-body)' }}
+                  style={{ color: 'rgba(217,119,87,0.9)', fontFamily: 'var(--font-body)' }}
                 >
                   {pkg.subtitle}
                 </p>
@@ -174,7 +174,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
                   {pkg.features.map((feat, fi) => (
                     <span key={fi} className="flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full" style={{ background: '#d4a574', opacity: 0.4 }} />
+                      <span className="w-1 h-1 rounded-full" style={{ background: '#D97757', opacity: 0.4 }} />
                       <span
                         className="text-[11px]"
                         style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.82)' }}
@@ -187,19 +187,19 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
 
                 {pkg.hasConfigurator && (
                   <div className="flex items-center justify-center gap-2 mb-2">
-                    <Settings size={11} style={{ color: '#d4a574', opacity: 0.7 }} />
-                    <span className="text-[9px] tracking-[0.2em] uppercase" style={{ color: '#d4a574', fontFamily: 'var(--font-body)' }}>
+                    <Settings size={11} style={{ color: '#D97757', opacity: 0.7 }} />
+                    <span className="text-[9px] tracking-[0.2em] uppercase" style={{ color: '#D97757', fontFamily: 'var(--font-body)' }}>
                       {lang === 'it' ? 'Configuratore Incluso' : 'Configurator Included'}
                     </span>
                   </div>
                 )}
 
                 {pkg.showPrice ? (
-                  <p className="text-3xl md:text-4xl font-bold" style={{ fontFamily: 'var(--font-display)', color: '#d4a574' }}>
+                  <p className="text-3xl md:text-4xl font-bold" style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}>
                     {pkg.price}
                   </p>
                 ) : (
-                  <p className="text-[11px] italic" style={{ color: 'rgba(212,165,116,0.92)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
+                  <p className="text-[11px] italic" style={{ color: 'rgba(217,119,87,0.92)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
                     {lang === 'it' ? 'Previa consulenza gratuita' : 'After free consultation'}
                   </p>
                 )}
@@ -208,17 +208,17 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                   onClick={pkg.onAction}
                   className="px-6 py-3 rounded-full text-[9px] md:text-[10px] tracking-[0.15em] uppercase transition-all duration-400 min-h-[44px] whitespace-nowrap"
                   style={{
-                    border: '1px solid rgba(212,165,116,0.3)',
-                    color: '#d4a574',
+                    border: '1px solid rgba(217,119,87,0.3)',
+                    color: '#D97757',
                     background: 'transparent',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.background = 'rgba(212,165,116,0.1)';
-                    e.currentTarget.style.borderColor = 'rgba(212,165,116,0.8)';
+                    e.currentTarget.style.background = 'rgba(217,119,87,0.1)';
+                    e.currentTarget.style.borderColor = 'rgba(217,119,87,0.8)';
                   }}
                   onMouseLeave={(e) => {
                     e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.borderColor = 'rgba(212,165,116,0.3)';
+                    e.currentTarget.style.borderColor = 'rgba(217,119,87,0.3)';
                   }}
                 >
                   {pkg.cta}

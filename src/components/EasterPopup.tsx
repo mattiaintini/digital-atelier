@@ -50,8 +50,8 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
             className="relative z-10 w-full max-w-[280px] sm:max-w-xs p-4 sm:p-5 md:p-6 rounded-xl text-center mx-2"
             style={{
               background: 'linear-gradient(145deg, rgba(15,12,8,0.98), rgba(10,8,5,0.98))',
-              border: '1px solid rgba(212,165,116,0.2)',
-              boxShadow: '0 0 60px rgba(212,165,116,0.08)',
+              border: '1px solid rgba(217,119,87,0.2)',
+              boxShadow: '0 0 60px rgba(217,119,87,0.08)',
             }}
             initial={{ opacity: 0, y: 30, scale: 0.92 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -70,7 +70,7 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
 
             <h2
               className="text-base sm:text-lg md:text-xl mb-1.5 sm:mb-2"
-              style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#d4a574' }}
+              style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#D97757' }}
             >
               {e.title}
             </h2>
@@ -79,20 +79,20 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
               className="text-[11px] sm:text-xs md:text-sm mb-1.5 sm:mb-2 leading-relaxed"
               style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.6)' }}
             >
-              {e.desc} <strong style={{ color: '#d4a574' }}>{e.bonus}</strong>.
+              {e.desc} <strong style={{ color: '#D97757' }}>{e.bonus}</strong>.
             </p>
 
             <div
               className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg mb-2 sm:mb-3"
               style={{
-                background: 'rgba(212,165,116,0.08)',
-                border: '1px solid rgba(212,165,116,0.25)',
+                background: 'rgba(217,119,87,0.08)',
+                border: '1px solid rgba(217,119,87,0.25)',
               }}
             >
               <p className="text-[8px] sm:text-[9px] tracking-[0.3em] uppercase mb-0.5" style={{ color: 'rgba(255,255,255,0.4)' }}>
                 {e.codeLabel}
               </p>
-              <p className="text-lg sm:text-xl font-bold tracking-widest" style={{ color: '#d4a574', fontFamily: 'var(--font-display)' }}>
+              <p className="text-lg sm:text-xl font-bold tracking-widest" style={{ color: '#D97757', fontFamily: 'var(--font-display)' }}>
                 EASTER26
               </p>
             </div>
@@ -101,9 +101,9 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
               className="text-[9px] sm:text-[10px] mb-3 sm:mb-4 leading-relaxed"
               style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
             >
-              {e.discountText} <strong style={{ color: '#d4a574' }}>{e.discountValue}</strong> {e.discountSuffix}
+              {e.discountText} <strong style={{ color: '#D97757' }}>{e.discountValue}</strong> {e.discountSuffix}
               <br />
-              <span className="text-[8px] sm:text-[9px] tracking-wider uppercase mt-1 inline-block" style={{ color: 'rgba(212,165,116,0.5)' }}>
+              <span className="text-[8px] sm:text-[9px] tracking-wider uppercase mt-1 inline-block" style={{ color: 'rgba(217,119,87,0.5)' }}>
                 {e.validity}
               </span>
             </p>
@@ -112,13 +112,13 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
               onClick={handleGetDiscount}
               className="w-full py-2.5 sm:py-3 rounded-full text-[8px] sm:text-[9px] tracking-[0.25em] uppercase min-h-[44px]"
               style={{
-                background: 'linear-gradient(135deg, rgba(212,165,116,0.2), rgba(212,165,116,0.08))',
-                border: '1px solid rgba(212,165,116,0.5)',
-                color: '#d4a574',
-                boxShadow: '0 0 30px rgba(212,165,116,0.1)',
+                background: 'linear-gradient(135deg, rgba(217,119,87,0.2), rgba(217,119,87,0.08))',
+                border: '1px solid rgba(217,119,87,0.5)',
+                color: '#D97757',
+                boxShadow: '0 0 30px rgba(217,119,87,0.1)',
                 cursor: 'pointer',
               }}
-              whileHover={{ scale: 1.02, boxShadow: '0 0 50px rgba(212,165,116,0.15)' }}
+              whileHover={{ scale: 1.02, boxShadow: '0 0 50px rgba(217,119,87,0.15)' }}
               whileTap={{ scale: 0.98 }}
             >
               {e.cta}

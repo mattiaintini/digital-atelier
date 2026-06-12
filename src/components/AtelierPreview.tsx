@@ -28,7 +28,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
       <div className="max-w-4xl mx-auto text-center">
         <p
           className="atelier-reveal text-[10px] md:text-[11px] tracking-[0.5em] uppercase mb-4"
-          style={{ fontFamily: 'var(--font-body)', color: 'rgba(212,165,116,0.9)' }}
+          style={{ fontFamily: 'var(--font-body)', color: 'rgba(217,119,87,0.9)' }}
         >
           {t.atelier.label}
         </p>
@@ -51,7 +51,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
               const Icon = featureIcons[i];
               return (
                 <div key={i} className="flex items-center gap-3 justify-center text-center">
-                  <Icon size={16} className="mt-0.5 flex-shrink-0" style={{ color: '#d4a574', opacity: 0.6 }} />
+                  <Icon size={16} className="mt-0.5 flex-shrink-0" style={{ color: '#D97757', opacity: 0.6 }} />
                   <p
                     className="text-xs md:text-sm"
                     style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.85)', lineHeight: 1.7 }}
@@ -69,25 +69,25 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
             onClick={onContact}
             className="w-fit px-3 md:px-4 py-2 md:py-2.5 text-[9px] md:text-[10px] tracking-[0.15em] uppercase rounded-full transition-all duration-500 min-h-[42px]"
             style={{
-              background: 'linear-gradient(135deg, rgba(212,165,116,0.12), rgba(212,165,116,0.04))',
-              border: '1px solid rgba(212,165,116,0.4)',
-              color: '#d4a574',
-              boxShadow: '0 0 40px rgba(212,165,116,0.06)',
+              background: 'linear-gradient(135deg, rgba(217,119,87,0.12), rgba(217,119,87,0.04))',
+              border: '1px solid rgba(217,119,87,0.4)',
+              color: '#D97757',
+              boxShadow: '0 0 40px rgba(217,119,87,0.06)',
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.background = 'linear-gradient(135deg, rgba(212,165,116,0.2), rgba(212,165,116,0.08))';
-              e.currentTarget.style.boxShadow = '0 0 60px rgba(212,165,116,0.12)';
+              e.currentTarget.style.background = 'linear-gradient(135deg, rgba(217,119,87,0.2), rgba(217,119,87,0.08))';
+              e.currentTarget.style.boxShadow = '0 0 60px rgba(217,119,87,0.12)';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = 'linear-gradient(135deg, rgba(212,165,116,0.12), rgba(212,165,116,0.04))';
-              e.currentTarget.style.boxShadow = '0 0 40px rgba(212,165,116,0.06)';
+              e.currentTarget.style.background = 'linear-gradient(135deg, rgba(217,119,87,0.12), rgba(217,119,87,0.04))';
+              e.currentTarget.style.boxShadow = '0 0 40px rgba(217,119,87,0.06)';
             }}
           >
             {t.atelier.cta}
           </button>
           <p
             className="text-[9px] tracking-[0.3em] uppercase"
-            style={{ color: 'rgba(212,165,116,0.85)', fontFamily: 'var(--font-body)' }}
+            style={{ color: 'rgba(217,119,87,0.85)', fontFamily: 'var(--font-body)' }}
           >
             {t.atelier.exclusive}
           </p>
