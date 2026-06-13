@@ -11,7 +11,6 @@ const Navbar = () => {
     { label: t.nav.chiSiamo, href: '#chi-siamo' },
     { label: t.nav.lavori, href: '#portfolio' },
     { label: t.nav.servizi, href: '#servizi' },
-    { label: t.nav.atelier, href: '#atelier' },
     { label: t.nav.faq, href: '#faq' },
     { label: t.nav.contatti, href: '#contatti' },
   ];

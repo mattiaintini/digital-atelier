@@ -19,7 +19,6 @@ import AboutSection from '@/components/AboutSection';
 import Marquee from '@/components/Marquee';
 import ParallaxElements from '@/components/ParallaxElements';
 import ServicesSection from '@/components/ServicesSection';
-import AtelierPreview from '@/components/AtelierPreview';
 import ScrollTransition from '@/components/ScrollTransition';
 
 import LanguageGate from '@/components/LanguageGate';
@@ -112,10 +111,6 @@ const Index = () => {
 
           <div className="scroll-reveal-section">
             <ServicesSection onContact={openContact} />
-          </div>
-
-          <div className="scroll-reveal-section">
-            <AtelierPreview onContact={openContact} />
           </div>
 
           <div id="faq" className="scroll-reveal-section relative">
