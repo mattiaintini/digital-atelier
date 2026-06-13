@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/i18n/LanguageContext';
+import logoSignature from '@/assets/logo-mi-signature-white.png';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -48,18 +49,11 @@ const Navbar = () => {
         className="flex items-center shrink-0"
         style={{ gap: 10, fontFamily: 'var(--font-display)' }}
       >
-        <span
-          style={{
-            width: 26, height: 26,
-            background: '#fff', color: '#000',
-            borderRadius: 6,
-            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 11, fontWeight: 600, fontFamily: 'var(--font-body)',
-            letterSpacing: '0.02em',
-          }}
-        >
-          MI
-        </span>
+        <img
+          src={logoSignature}
+          alt="Mattia Intini"
+          style={{ height: 34, width: 'auto', display: 'block' }}
+        />
         <span
           className="hidden sm:block whitespace-nowrap"
           style={{ color: '#fff', fontWeight: 600, fontSize: 15, letterSpacing: '-0.02em' }}
