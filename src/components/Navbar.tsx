@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useLanguage } from '@/i18n/LanguageContext';
-import logoMi from '@/assets/logo-mi-white.png';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -12,7 +11,6 @@ const Navbar = () => {
     { label: t.nav.lavori, href: '#portfolio' },
     { label: t.nav.servizi, href: '#servizi' },
     { label: t.nav.faq, href: '#faq' },
-    { label: t.nav.contatti, href: '#contatti' },
   ];
 
   // Lock body scroll when mobile menu is open
@@ -34,7 +32,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-1.5 lg:gap-2 xl:gap-2.5 p-1.5 pl-3 lg:pl-3 lg:pr-1.5 xl:pl-3.5 xl:pr-1.5"
+      className="fixed top-3.5 lg:top-5 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-32px)] grid items-center gap-3 lg:gap-9 p-1.5 pl-4 lg:p-2 lg:pl-[22px]"
       style={{
         gridTemplateColumns: 'auto 1fr auto',
         background: 'rgba(15,15,16,0.65)',
@@ -45,31 +43,46 @@ const Navbar = () => {
       }}
     >
       {/* Brand */}
-      <button onClick={() => scrollTo('#hero')} className="flex items-center gap-2 lg:gap-2 xl:gap-2.5 shrink-0">
-        <img
-          src={logoMi}
-          alt="Mattia Intini"
-          className="h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain select-none"
-          style={{ opacity: 0.95 }}
-        />
+      <button
+        onClick={() => scrollTo('#hero')}
+        className="flex items-center shrink-0"
+        style={{ gap: 10, fontFamily: 'var(--font-display)' }}
+      >
         <span
-          className="hidden sm:block lg:hidden xl:block text-[13px] md:text-[14px] xl:text-[15px] whitespace-nowrap"
-          style={{ color: '#fff', fontFamily: 'var(--font-display)', fontWeight: 600, letterSpacing: '-0.02em' }}
+          style={{
+            width: 26, height: 26,
+            background: '#fff', color: '#000',
+            borderRadius: 6,
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: 11, fontWeight: 600, fontFamily: 'var(--font-body)',
+            letterSpacing: '0.02em',
+          }}
+        >
+          MI
+        </span>
+        <span
+          className="hidden sm:block whitespace-nowrap"
+          style={{ color: '#fff', fontWeight: 600, fontSize: 15, letterSpacing: '-0.02em' }}
         >
           Intini Web Atelier
         </span>
       </button>
 
       {/* Links — center column */}
-      <ul className="flex items-center justify-center gap-0.5 xl:gap-0.5 list-none min-w-0">
+      <ul className="hidden lg:flex items-center justify-center list-none" style={{ gap: 4 }}>
         {NAV_ITEMS.map((item) => (
-          <li key={item.label} className="hidden lg:block">
+          <li key={item.label}>
             <button
               onClick={() => scrollTo(item.href)}
-              className="text-[13px] xl:text-[14px] px-2 py-2 rounded-full transition-colors duration-150 whitespace-nowrap"
-              style={{ color: 'rgba(255,255,255,0.62)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
+              className="whitespace-nowrap"
+              style={{
+                fontSize: 13, fontWeight: 400, color: '#a1a1aa',
+                padding: '8px 12px', borderRadius: 999,
+                fontFamily: 'var(--font-body)',
+                transition: 'color 0.15s ease, background 0.15s ease',
+              }}
               onMouseEnter={(e) => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.62)'; e.currentTarget.style.background = 'transparent'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.color = '#a1a1aa'; e.currentTarget.style.background = 'transparent'; }}
             >
               {item.label}
             </button>
@@ -78,11 +91,17 @@ const Navbar = () => {
       </ul>
 
       {/* Right group */}
-      <div className="flex items-center gap-1.5 xl:gap-2 shrink-0">
+      <div className="flex items-center gap-1.5 lg:gap-2 shrink-0 justify-self-end">
         <button
           onClick={toggleLang}
-          className="text-[11px] xl:text-[12px] tracking-[0.1em] uppercase px-2.5 py-1.5 lg:px-3 lg:py-2 rounded-full transition-colors duration-150"
-          style={{ border: '1px solid rgba(255,255,255,0.14)', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)' }}
+          style={{
+            fontSize: 11, fontFamily: 'var(--font-body)',
+            color: 'rgba(255,255,255,0.85)',
+            border: '1px solid rgba(255,255,255,0.14)',
+            borderRadius: 999, padding: '7px 11px',
+            letterSpacing: '0.1em', textTransform: 'uppercase',
+            transition: 'border-color 0.15s ease',
+          }}
           onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)')}
           onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.14)')}
         >
@@ -92,15 +111,24 @@ const Navbar = () => {
         {/* CTA filled pill */}
         <button
           onClick={() => scrollTo('#contatti')}
-          className="hidden md:inline-flex items-center gap-1.5 rounded-full transition-opacity duration-150 whitespace-nowrap text-[13px] xl:text-[14px] py-2 pl-3.5 pr-2 xl:pl-4 xl:pr-2"
-          style={{ background: '#fff', color: '#000', fontFamily: 'var(--font-body)', fontWeight: 500 }}
+          className="hidden md:inline-flex items-center whitespace-nowrap"
+          style={{
+            gap: 8, background: '#fff', color: '#000',
+            padding: '10px 8px 10px 18px', borderRadius: 999,
+            fontSize: 13, fontWeight: 500, fontFamily: 'var(--font-body)',
+            transition: 'opacity 0.15s ease',
+          }}
           onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.88')}
           onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
         >
           {t.nav.contatti}
           <span
-            className="inline-flex items-center justify-center rounded-full w-[22px] h-[22px] xl:w-7 xl:h-7 text-[12px] xl:text-[14px]"
-            style={{ background: 'rgba(0,0,0,0.1)' }}
+            style={{
+              width: 24, height: 24, borderRadius: 999,
+              background: 'rgba(0,0,0,0.1)',
+              display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+              fontSize: 12,
+            }}
           >
             →
           </span>
@@ -131,15 +159,20 @@ const Navbar = () => {
             padding: '10px',
           }}
         >
-          <ul className="flex flex-col gap-0.5 list-none">
+          <ul className="flex flex-col list-none" style={{ gap: 2 }}>
             {NAV_ITEMS.map((item) => (
               <li key={item.label}>
                 <button
                   onClick={() => scrollTo(item.href)}
-                  className="w-full text-left text-[14px] px-4 py-2.5 rounded-xl transition-colors"
-                  style={{ color: 'rgba(255,255,255,0.78)', fontFamily: 'var(--font-body)' }}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = 'rgba(255,255,255,0.06)')}
-                  onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
+                  className="w-full text-left"
+                  style={{
+                    fontSize: 13, color: '#a1a1aa',
+                    padding: '10px 16px', borderRadius: 12,
+                    fontFamily: 'var(--font-body)',
+                    transition: 'color 0.15s ease, background 0.15s ease',
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.color = '#a1a1aa'; e.currentTarget.style.background = 'transparent'; }}
                 >
                   {item.label}
                 </button>

@@ -104,7 +104,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
 
   return (
     <section id="servizi" ref={sectionRef} className="relative py-24 md:py-40 px-4 md:px-16">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16 md:mb-24">
           <p
@@ -129,108 +129,136 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
           </p>
         </div>
 
-        {/* Package rows */}
-        <div className="space-y-0">
+        {/* Package cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
           {packages.map((pkg, i) => (
             <div
               key={i}
-              className="pkg-row group"
+              className="pkg-row group flex flex-col justify-between"
               style={{
-                borderTop: '1px solid rgba(255,255,255,0.06)',
-                ...(i === packages.length - 1 ? { borderBottom: '1px solid rgba(255,255,255,0.06)' } : {}),
+                background: 'rgba(10,10,11,0.6)',
+                border: '1px solid rgba(255,255,255,0.08)',
+                borderRadius: 12,
+                padding: 'clamp(28px, 3vw, 40px)',
+                minHeight: 340,
+                transition: 'border-color 0.4s ease, background 0.4s ease',
               }}
+              onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.16)'; e.currentTarget.style.background = 'rgba(13,13,15,0.8)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)'; e.currentTarget.style.background = 'rgba(10,10,11,0.6)'; }}
             >
-              <div className="py-10 md:py-14 flex flex-col items-center text-center gap-4 transition-all duration-500">
-                {/* Number + icon */}
-                <div className="flex items-center gap-3">
+              {/* Top: number pill + icon */}
+              <div className="flex items-start justify-between">
+                <span
+                  className="inline-flex items-center"
+                  style={{
+                    gap: 8, padding: '5px 12px 5px 6px',
+                    background: 'rgba(255,255,255,0.05)',
+                    border: '1px solid rgba(255,255,255,0.08)',
+                    borderRadius: 999,
+                    fontSize: 11.5, color: '#a1a1aa', letterSpacing: '0.04em',
+                    fontFamily: 'var(--font-body)',
+                  }}
+                >
                   <span
-                    className="text-[10px] tracking-[0.3em] uppercase"
-                    style={{ fontFamily: 'var(--font-body)', color: 'rgba(217,119,87,0.8)' }}
+                    style={{
+                      width: 20, height: 20, background: '#fff', color: '#000',
+                      borderRadius: 999, display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: 11, fontWeight: 600,
+                    }}
                   >
                     0{i + 1}
                   </span>
-                  <pkg.icon size={20} style={{ color: '#D97757', opacity: 0.6 }} />
-                </div>
+                  {pkg.subtitle}
+                </span>
+                <pkg.icon size={20} strokeWidth={1.5} style={{ color: 'rgba(255,255,255,0.3)', flexShrink: 0 }} />
+              </div>
 
+              {/* Middle: name + deck + tags */}
+              <div className="mt-8 md:mt-10">
                 <h3
-                  className="text-xl md:text-2xl mb-1"
-                  style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#ffffff' }}
+                  className="mb-3"
+                  style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#ffffff', fontSize: 'clamp(22px, 2.6vw, 30px)', lineHeight: 1.1, letterSpacing: '-0.02em' }}
                 >
                   {pkg.name}
                 </h3>
                 <p
-                  className="text-[10px] tracking-[0.3em] uppercase mb-2"
-                  style={{ color: 'rgba(217,119,87,0.9)', fontFamily: 'var(--font-body)' }}
-                >
-                  {pkg.subtitle}
-                </p>
-                <p
-                  className="text-base md:text-lg mb-4 max-w-lg mx-auto"
-                  style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
+                  className="mb-5"
+                  style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: '#a1a1aa', fontSize: 14.5, lineHeight: 1.6, maxWidth: '42ch' }}
                 >
                   {pkg.description}
                 </p>
 
-                <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mb-4">
+                <div className="flex flex-wrap" style={{ gap: 6 }}>
                   {pkg.features.map((feat, fi) => (
-                    <span key={fi} className="flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full" style={{ background: '#D97757', opacity: 0.4 }} />
-                      <span
-                        className="text-sm md:text-base"
-                        style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.82)' }}
-                      >
-                        {feat}
-                      </span>
+                    <span
+                      key={fi}
+                      style={{
+                        fontSize: 12, padding: '5px 11px',
+                        background: 'rgba(255,255,255,0.04)',
+                        border: '1px solid rgba(255,255,255,0.08)',
+                        borderRadius: 999, color: '#f4f4f5',
+                        fontFamily: 'var(--font-body)',
+                      }}
+                    >
+                      {feat}
                     </span>
                   ))}
-                </div>
-
-                {pkg.hasConfigurator && (
-                  <div className="flex items-center justify-center gap-2 mb-2">
-                    <Settings size={11} style={{ color: '#D97757', opacity: 0.7 }} />
-                    <span className="text-[9px] tracking-[0.2em] uppercase" style={{ color: '#D97757', fontFamily: 'var(--font-body)' }}>
-                      {lang === 'it' ? 'Configuratore Incluso' : 'Configurator Included'}
+                  {pkg.hasConfigurator && (
+                    <span
+                      className="inline-flex items-center"
+                      style={{
+                        gap: 6, fontSize: 12, padding: '5px 11px',
+                        background: 'rgba(217,119,87,0.08)',
+                        border: '1px solid rgba(217,119,87,0.3)',
+                        borderRadius: 999, color: '#D97757',
+                        fontFamily: 'var(--font-body)',
+                      }}
+                    >
+                      <Settings size={11} strokeWidth={2} />
+                      {lang === 'it' ? 'Configuratore' : 'Configurator'}
                     </span>
-                  </div>
-                )}
+                  )}
+                </div>
+              </div>
 
-                {pkg.showPrice ? (
-                  <p className="text-3xl md:text-4xl font-bold" style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}>
-                    {pkg.price}
-                  </p>
-                ) : (
-                  <p className="text-[11px] italic" style={{ color: 'rgba(217,119,87,0.92)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
-                    {lang === 'it' ? 'Previa consulenza gratuita' : 'After free consultation'}
-                  </p>
-                )}
-
+              {/* Bottom: price note + CTA */}
+              <div
+                className="mt-8 md:mt-10 flex items-end justify-between"
+                style={{ gap: 16, paddingTop: 20, borderTop: '1px solid rgba(255,255,255,0.06)' }}
+              >
+                <p style={{ fontFamily: 'var(--font-body)', fontStyle: 'italic', color: '#71717a', fontSize: 12.5, lineHeight: 1.4 }}>
+                  {lang === 'it' ? 'Previa consulenza gratuita' : 'After free consultation'}
+                </p>
                 <button
                   onClick={pkg.onAction}
-                  className="px-6 py-3 rounded-full text-[9px] md:text-[10px] tracking-[0.15em] uppercase transition-all duration-400 min-h-[44px] whitespace-nowrap"
-                  style={{
-                    border: '1px solid rgba(217,119,87,0.3)',
-                    color: '#D97757',
-                    background: 'transparent',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = 'rgba(217,119,87,0.1)';
-                    e.currentTarget.style.borderColor = 'rgba(217,119,87,0.8)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.borderColor = 'rgba(217,119,87,0.3)';
-                  }}
+                  className="inline-flex items-center shrink-0"
+                  style={{ gap: 8, fontSize: 13, color: '#ffffff', fontFamily: 'var(--font-body)', fontWeight: 400, whiteSpace: 'nowrap' }}
                 >
                   {pkg.cta}
+                  <span
+                    className="pkg-arrow"
+                    style={{
+                      width: 24, height: 24, borderRadius: 999,
+                      background: 'rgba(255,255,255,0.08)', color: '#fff',
+                      display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: 12, transition: 'background 0.15s ease, color 0.15s ease',
+                    }}
+                  >
+                    →
+                  </span>
                 </button>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="text-center text-[10px] tracking-wider mt-12" style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-body)' }}>
+        <p className="text-center mt-12" style={{ color: '#a1a1aa', fontFamily: 'var(--font-body)', fontSize: 12.5, letterSpacing: '0.02em' }}>
           {lang === 'it' ? 'Percorso Fondamentale pronto in 72 ore' : 'Fundamental Path ready in 72 hours'} · {lang === 'it' ? 'Per gli altri percorsi, tempi in base al progetto.' : 'Other paths: timeline based on project scope.'}
         </p>
+
+        <style>{`
+          .pkg-row:hover .pkg-arrow { background: #fff; color: #000; }
+        `}</style>
       </div>
     </section>
   );
