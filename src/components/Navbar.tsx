@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/i18n/LanguageContext';
+import logoMi from '@/assets/logo-mi-white.png';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -67,10 +68,20 @@ const Navbar = () => {
               const el = document.querySelector('#hero');
               el?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em] uppercase"
-            style={{ color: '#D97757', fontFamily: 'var(--font-display)', fontWeight: 400 }}
+            className="flex items-center gap-3"
           >
-            INTINI WEB ATELIER
+            <img
+              src={logoMi}
+              alt="Mattia Intini"
+              className="w-7 h-7 md:w-9 md:h-9 object-contain select-none"
+              style={{ opacity: 0.95 }}
+            />
+            <span
+              className="text-xs md:text-sm tracking-[0.3em] md:tracking-[0.4em] uppercase"
+              style={{ color: '#D97757', fontFamily: 'var(--font-display)', fontWeight: 400 }}
+            >
+              INTINI WEB ATELIER
+            </span>
           </button>
 
           <div className="hidden md:flex items-center gap-8 lg:gap-10">
