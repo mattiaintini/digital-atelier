@@ -83,7 +83,7 @@ const LanguageGate = () => {
                       style={{
                         color: 'rgba(255,255,255,0.8)',
                         fontFamily: 'var(--font-display)',
-                        fontWeight: 300,
+                        fontWeight: 500,
                       }}
                     >
                       {l.label}

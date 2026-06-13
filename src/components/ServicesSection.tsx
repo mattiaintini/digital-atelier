@@ -115,7 +115,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
           </p>
           <h2
             className="text-3xl md:text-5xl lg:text-6xl mb-6 md:mb-8"
-            style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#ffffff', lineHeight: 1.1 }}
+            style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#ffffff', lineHeight: 1.1 }}
           >
             {lang === 'it' ? 'I Nostri Pacchetti' : 'Our Packages'}
           </h2>
@@ -154,7 +154,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
 
                 <h3
                   className="text-xl md:text-2xl mb-1"
-                  style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#ffffff' }}
+                  style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#ffffff' }}
                 >
                   {pkg.name}
                 </h3>

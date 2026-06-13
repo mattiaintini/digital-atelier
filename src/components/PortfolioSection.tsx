@@ -89,7 +89,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       <div className="absolute bottom-0 left-0 right-0 p-5 z-10">
         <h3
           className="text-lg md:text-xl mb-1"
-          style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#ffffff', textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}
+          style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#ffffff', textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}
         >
           {project.title}
         </h3>
@@ -155,7 +155,7 @@ const PortfolioSection = () => {
         </p>
         <h2
           className="text-3xl md:text-6xl lg:text-7xl mb-4 md:mb-6"
-          style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#ffffff', lineHeight: 1.1 }}
+          style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#ffffff', lineHeight: 1.1 }}
         >
           {t.portfolio.title}
         </h2>

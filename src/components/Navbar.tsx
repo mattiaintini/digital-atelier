@@ -153,7 +153,7 @@ const Navbar = () => {
                 key={item.label}
                 onClick={() => handleNav(item)}
                 className="text-sm tracking-[0.35em] uppercase min-h-[48px] flex items-center"
-                style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-display)', fontWeight: 300 }}
+                style={{ color: 'rgba(255,255,255,0.7)', fontFamily: 'var(--font-display)', fontWeight: 500 }}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 + i * 0.06, duration: 0.4 }}

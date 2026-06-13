@@ -127,7 +127,7 @@ function ProjectCard({ project }: { project: Project }) {
             className="text-2xl md:text-3xl mb-1"
             style={{
               fontFamily: 'var(--font-display)',
-              fontWeight: 300,
+              fontWeight: 500,
               color: '#ffffff',
               textShadow: '0 2px 10px rgba(0,0,0,0.5)',
             }}
@@ -220,7 +220,7 @@ const HorizontalPortfolio = () => {
           className="text-3xl md:text-5xl"
           style={{
             fontFamily: 'var(--font-display)',
-            fontWeight: 300,
+            fontWeight: 500,
             color: '#ffffff',
             textShadow: '0 4px 20px rgba(0,0,0,0.6)',
           }}

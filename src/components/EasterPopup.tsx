@@ -70,7 +70,7 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
 
             <h2
               className="text-base sm:text-lg md:text-xl mb-1.5 sm:mb-2"
-              style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#D97757' }}
+              style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#D97757' }}
             >
               {e.title}
             </h2>

@@ -67,7 +67,7 @@ const AboutSection = () => {
           className="about-anim about-glow leading-[1.15] mb-6"
           style={{
             fontFamily: 'var(--font-display)',
-            fontWeight: 300,
+            fontWeight: 500,
             fontSize: 'clamp(1.6rem, 4.5vw, 3.2rem)',
             color: '#ffffff',
             wordSpacing: '0.2em',

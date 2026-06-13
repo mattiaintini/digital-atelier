@@ -34,7 +34,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
         </p>
         <h2
           className="atelier-reveal text-3xl md:text-5xl lg:text-6xl mb-4 md:mb-6"
-          style={{ fontFamily: 'var(--font-display)', fontWeight: 300, color: '#ffffff', lineHeight: 1.1 }}
+          style={{ fontFamily: 'var(--font-display)', fontWeight: 500, color: '#ffffff', lineHeight: 1.1 }}
         >
           {t.atelier.title}
         </h2>

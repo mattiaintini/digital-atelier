@@ -14,7 +14,7 @@ const HeroTitle = ({ visible }: HeroTitleProps) => {
         className="text-foreground leading-[1.1] mb-6 md:mb-8"
         style={{
           fontFamily: 'var(--font-display)',
-          fontWeight: 300,
+          fontWeight: 500,
           fontSize: 'clamp(2.2rem, 8vw, 6.5rem)',
           opacity: visible ? 1 : 0,
           transition: 'opacity 1.6s ease 0.3s',
