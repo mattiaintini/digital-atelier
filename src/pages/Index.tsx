@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Preloader from '@/components/Preloader';
 import SmoothScroll from '@/components/SmoothScroll';
+import WebGLBackground from '@/components/WebGLBackground';
 import Hero3DScene from '@/components/Hero3DScene';
 import HeroTitle from '@/components/HeroTitle';
 import PortfolioSection from '@/components/PortfolioSection';
@@ -68,6 +69,7 @@ const Index = () => {
     <>
       <LanguageGate />
       <Preloader onComplete={handlePreloaderComplete} />
+      <WebGLBackground />
       <ParallaxElements />
       
       <motion.div
