@@ -121,7 +121,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
           </h2>
           <p
             className="text-sm md:text-base max-w-2xl mx-auto"
-            style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.78)', letterSpacing: '0.03em', lineHeight: 1.9 }}
+            style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.78)', letterSpacing: '0.03em', lineHeight: 1.9 }}
           >
             {lang === 'it'
               ? 'Ogni nostro progetto è creato al 100% su misura. I pacchetti sottostanti sono solo esempi illustrativi delle nostre capacità.'
@@ -166,7 +166,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                 </p>
                 <p
                   className="text-sm mb-4 max-w-lg mx-auto"
-                  style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
+                  style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
                 >
                   {pkg.description}
                 </p>
@@ -177,7 +177,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                       <span className="w-1 h-1 rounded-full" style={{ background: '#D97757', opacity: 0.4 }} />
                       <span
                         className="text-[11px]"
-                        style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.82)' }}
+                        style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.82)' }}
                       >
                         {feat}
                       </span>
@@ -199,7 +199,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                     {pkg.price}
                   </p>
                 ) : (
-                  <p className="text-[11px] italic" style={{ color: 'rgba(217,119,87,0.92)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
+                  <p className="text-[11px] italic" style={{ color: 'rgba(217,119,87,0.92)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
                     {lang === 'it' ? 'Previa consulenza gratuita' : 'After free consultation'}
                   </p>
                 )}

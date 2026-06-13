@@ -77,7 +77,7 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
 
             <p
               className="text-[11px] sm:text-xs md:text-sm mb-1.5 sm:mb-2 leading-relaxed"
-              style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.6)' }}
+              style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.6)' }}
             >
               {e.desc} <strong style={{ color: '#D97757' }}>{e.bonus}</strong>.
             </p>
@@ -99,7 +99,7 @@ const EasterPopup = ({ onGetDiscount }: EasterPopupProps) => {
 
             <p
               className="text-[9px] sm:text-[10px] mb-3 sm:mb-4 leading-relaxed"
-              style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.4)' }}
+              style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.4)' }}
             >
               {e.discountText} <strong style={{ color: '#D97757' }}>{e.discountValue}</strong> {e.discountSuffix}
               <br />

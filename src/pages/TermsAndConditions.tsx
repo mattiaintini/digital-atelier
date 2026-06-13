@@ -15,7 +15,7 @@ const TermsAndConditions = () => (
         Ultimo aggiornamento: 14 aprile 2026
       </p>
 
-      <div className="space-y-8 text-sm leading-[1.8]" style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
+      <div className="space-y-8 text-sm leading-[1.8]" style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
 
         <p>
           I presenti Termini e Condizioni regolano l'utilizzo del sito web intiniwebatelier.com, gestito da Intini Web Atelier.

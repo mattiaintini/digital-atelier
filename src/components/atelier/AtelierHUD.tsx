@@ -57,7 +57,7 @@ function PhaseHeader({ number, title, subtitle }: { number: string; title: strin
         FASE {number} — {title}
       </p>
       {subtitle && (
-        <h2 className="text-lg font-light" style={{ fontFamily: 'var(--font-display)' }}>{subtitle}</h2>
+        <h2 className="text-lg font-medium" style={{ fontFamily: 'var(--font-display)' }}>{subtitle}</h2>
       )}
     </div>
   );
@@ -479,7 +479,7 @@ function FinaleOverlay() {
         transition={{ delay: 0.8, duration: 1, ease: [0.22, 1, 0.36, 1] }}
       >
         <motion.div className="w-16 h-[1px] mx-auto mb-10" style={{ background: 'linear-gradient(90deg, transparent, #D97757, transparent)' }} initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ delay: 1.2, duration: 1.5 }} />
-        <h2 className="text-3xl md:text-4xl font-light mb-6 leading-[1.2]" style={{ fontFamily: 'var(--font-display)', color: '#ffffff' }}>La Tua Visione è Pronta.</h2>
+        <h2 className="text-3xl md:text-4xl font-medium mb-6 leading-[1.2]" style={{ fontFamily: 'var(--font-display)', color: '#ffffff' }}>La Tua Visione è Pronta.</h2>
         <p className="text-[11px] tracking-[0.1em] leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.45)' }}>Un'opera di questo calibro richiede una direzione artistica dedicata.</p>
         <p className="text-sm mb-10" style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}>Il valore di partenza per le nostre creazioni su misura è di <strong>5.000€</strong>.</p>
         <motion.a

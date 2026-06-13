@@ -27,7 +27,7 @@ const HeroTitle = ({ visible }: HeroTitleProps) => {
         className="text-[10px] md:text-base tracking-widest uppercase mt-2 max-w-lg mx-auto text-center"
         style={{
           fontFamily: 'var(--font-body)',
-          fontWeight: 300,
+          fontWeight: 400,
           letterSpacing: '0.15em',
           color: 'rgba(255,255,255,0.78)',
           lineHeight: '1.8',

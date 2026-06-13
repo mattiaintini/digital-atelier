@@ -81,7 +81,7 @@ const AtelierPaywall = () => {
         </p>
 
         <h1
-          className="text-center text-4xl md:text-5xl font-light mb-4 leading-[1.1]"
+          className="text-center text-4xl md:text-5xl font-medium mb-4 leading-[1.1]"
           style={{ fontFamily: 'var(--font-display)', color: '#ffffff' }}
         >
           L'Atelier
@@ -112,7 +112,7 @@ const AtelierPaywall = () => {
 
           <div className="flex items-center justify-between mt-8">
             <div>
-              <p className="text-2xl font-light" style={{ fontFamily: 'var(--font-display)', color: '#ffffff' }}>
+              <p className="text-2xl font-medium" style={{ fontFamily: 'var(--font-display)', color: '#ffffff' }}>
                 €9<span className="text-base">,90</span>
               </p>
               <p className="text-[9px] tracking-[0.2em] uppercase mt-1" style={{ color: 'rgba(255,255,255,0.25)' }}>

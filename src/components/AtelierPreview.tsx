@@ -40,7 +40,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
         </h2>
         <p
           className="atelier-reveal text-xs md:text-base max-w-2xl mx-auto mb-10 md:mb-16"
-          style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
+          style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
         >
           {t.atelier.subtitle}
         </p>
@@ -54,7 +54,7 @@ const AtelierPreview = ({ onContact }: { onContact: () => void }) => {
                   <Icon size={16} className="mt-0.5 flex-shrink-0" style={{ color: '#D97757', opacity: 0.6 }} />
                   <p
                     className="text-xs md:text-sm"
-                    style={{ fontFamily: 'var(--font-body)', fontWeight: 300, color: 'rgba(255,255,255,0.85)', lineHeight: 1.7 }}
+                    style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.85)', lineHeight: 1.7 }}
                   >
                     {feature}
                   </p>

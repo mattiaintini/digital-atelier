@@ -15,7 +15,7 @@ const CookiePolicy = () => (
         Ai sensi dell'art. 13 del Regolamento UE 2016/679 e delle Linee Guida del Garante Privacy
       </p>
 
-      <div className="space-y-8 text-sm leading-[1.8]" style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
+      <div className="space-y-8 text-sm leading-[1.8]" style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
 
         <section>
           <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>1. Cosa sono i Cookie</h2>

@@ -32,7 +32,7 @@ const CookieBanner = () => {
     >
       <p
         className="text-[11px] leading-[1.7] mb-3"
-        style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
+        style={{ color: 'rgba(255,255,255,0.45)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
       >
         {t.cookie.text}{' '}
         <Link to="/cookie-policy" className="underline" style={{ color: '#D97757' }}>{t.cookie.policy}</Link>.

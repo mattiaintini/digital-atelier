@@ -38,7 +38,7 @@ const LuxuryToast = ({ visible, message, onDismiss, duration = 4000 }: LuxuryToa
             }}
           >
             <CheckCircle size={16} style={{ color: '#D97757', flexShrink: 0 }} />
-            <span style={{ color: 'rgba(255,255,255,0.8)', fontFamily: 'var(--font-body)', fontWeight: 300, fontSize: '13px' }}>
+            <span style={{ color: 'rgba(255,255,255,0.8)', fontFamily: 'var(--font-body)', fontWeight: 400, fontSize: '13px' }}>
               {message}
             </span>
           </div>

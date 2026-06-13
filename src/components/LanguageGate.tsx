@@ -47,7 +47,7 @@ const LanguageGate = () => {
             {/* Prompt */}
             <p
               className="text-[11px] md:text-xs tracking-[0.3em] uppercase text-center"
-              style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
+              style={{ color: 'rgba(255,255,255,0.5)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
             >
               Select Your Language
             </p>
@@ -93,7 +93,7 @@ const LanguageGate = () => {
                       style={{
                         color: 'rgba(217,119,87,0.5)',
                         fontFamily: 'var(--font-body)',
-                        fontWeight: 300,
+                        fontWeight: 400,
                       }}
                     >
                       {l.native}

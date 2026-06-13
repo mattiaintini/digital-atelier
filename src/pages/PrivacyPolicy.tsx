@@ -15,7 +15,7 @@ const PrivacyPolicy = () => (
         Ultimo aggiornamento: 14 aprile 2026
       </p>
 
-      <div className="space-y-8 text-sm leading-[1.8]" style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontWeight: 300 }}>
+      <div className="space-y-8 text-sm leading-[1.8]" style={{ color: 'rgba(255,255,255,0.6)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
 
         <p>
           Intini Web Atelier (di seguito "noi" o "il Titolare") gestisce il sito web intiniwebatelier.com. La presente informativa descrive le modalità di trattamento dei dati personali degli utenti che consultano il sito, ai sensi del Regolamento (UE) 2016/679 (GDPR) e del D.Lgs. 196/2003 come modificato dal D.Lgs. 101/2018.

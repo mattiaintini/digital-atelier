@@ -79,7 +79,7 @@ const Navbar = () => {
                 key={item.label}
                 onClick={() => handleNav(item)}
                 className="text-xs tracking-[0.25em] uppercase transition-colors duration-300"
-                style={{ color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontWeight: 300 }}
+                style={{ color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.85)')}
               >
