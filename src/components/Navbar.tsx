@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-2 lg:gap-3 xl:gap-4 p-1.5 pl-3 lg:pl-3.5 lg:pr-2 xl:pl-4 xl:pr-2"
+      className="absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-1.5 lg:gap-2 xl:gap-2.5 p-1.5 pl-3 lg:pl-3 lg:pr-1.5 xl:pl-3.5 xl:pr-1.5"
       style={{
         gridTemplateColumns: 'auto 1fr auto',
         background: 'rgba(15,15,16,0.65)',
@@ -46,7 +46,7 @@ const Navbar = () => {
       }}
     >
       {/* Brand */}
-      <button onClick={() => scrollTo('#hero')} className="flex items-center gap-2.5 lg:gap-3 xl:gap-4 shrink-0">
+      <button onClick={() => scrollTo('#hero')} className="flex items-center gap-2 lg:gap-2 xl:gap-2.5 shrink-0">
         <img
           src={logoMi}
           alt="Mattia Intini"
@@ -54,7 +54,7 @@ const Navbar = () => {
           style={{ opacity: 0.95 }}
         />
         <span
-          className="hidden sm:block lg:hidden xl:block text-[13px] md:text-[15px] xl:text-[18px] whitespace-nowrap"
+          className="hidden sm:block lg:hidden xl:block text-[13px] md:text-[14px] xl:text-[15px] whitespace-nowrap"
           style={{ color: '#fff', fontFamily: 'var(--font-display)', fontWeight: 600, letterSpacing: '-0.02em' }}
         >
           Intini Web Atelier
@@ -62,12 +62,12 @@ const Navbar = () => {
       </button>
 
       {/* Links — center column */}
-      <ul className="flex items-center justify-center gap-1 xl:gap-2 list-none min-w-0">
+      <ul className="flex items-center justify-center gap-0.5 xl:gap-0.5 list-none min-w-0">
         {NAV_ITEMS.map((item) => (
           <li key={item.label} className="hidden lg:block">
             <button
               onClick={() => scrollTo(item.href)}
-              className="text-[14px] xl:text-[15px] px-2.5 py-2 rounded-full transition-colors duration-150 whitespace-nowrap"
+              className="text-[13px] xl:text-[14px] px-2 py-2 rounded-full transition-colors duration-150 whitespace-nowrap"
               style={{ color: 'rgba(255,255,255,0.62)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
               onMouseEnter={(e) => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.62)'; e.currentTarget.style.background = 'transparent'; }}
@@ -79,7 +79,7 @@ const Navbar = () => {
       </ul>
 
       {/* Right group */}
-      <div className="flex items-center gap-2 xl:gap-3 shrink-0">
+      <div className="flex items-center gap-1.5 xl:gap-2 shrink-0">
         <button
           onClick={toggleLang}
           className="text-[11px] xl:text-[12px] tracking-[0.1em] uppercase px-2.5 py-1.5 lg:px-3 lg:py-2 rounded-full transition-colors duration-150"
@@ -93,7 +93,7 @@ const Navbar = () => {
         {/* CTA filled pill */}
         <button
           onClick={() => scrollTo('#contatti')}
-          className="hidden md:inline-flex items-center gap-2 rounded-full transition-opacity duration-150 whitespace-nowrap text-[13px] xl:text-[14px] py-2 pl-4 pr-2 xl:pl-5 xl:pr-2"
+          className="hidden md:inline-flex items-center gap-1.5 rounded-full transition-opacity duration-150 whitespace-nowrap text-[13px] xl:text-[14px] py-2 pl-3.5 pr-2 xl:pl-4 xl:pr-2"
           style={{ background: '#fff', color: '#000', fontFamily: 'var(--font-body)', fontWeight: 500 }}
           onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.88')}
           onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
