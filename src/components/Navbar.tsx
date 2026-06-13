@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-4 lg:top-7 xl:top-8 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-3 lg:gap-5 xl:gap-12 p-2 pl-[18px] lg:py-3 lg:pl-6 lg:pr-3 xl:py-4 xl:pl-10 xl:pr-4"
+      className="absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-3 lg:gap-4 xl:gap-7 p-1.5 pl-3 lg:pl-4 lg:pr-2 xl:pl-5 xl:pr-2"
       style={{
         gridTemplateColumns: 'auto 1fr auto',
         background: 'rgba(15,15,16,0.65)',
@@ -50,11 +50,11 @@ const Navbar = () => {
         <img
           src={logoMi}
           alt="Mattia Intini"
-          className="h-5 md:h-7 lg:h-10 xl:h-12 w-auto object-contain select-none"
+          className="h-12 md:h-16 lg:h-20 xl:h-24 w-auto object-contain select-none"
           style={{ opacity: 0.95 }}
         />
         <span
-          className="hidden sm:block lg:hidden xl:block text-[13px] md:text-[15px] xl:text-[22px] whitespace-nowrap"
+          className="hidden sm:block lg:hidden xl:block text-[13px] md:text-[15px] xl:text-[18px] whitespace-nowrap"
           style={{ color: '#fff', fontFamily: 'var(--font-display)', fontWeight: 600, letterSpacing: '-0.02em' }}
         >
           Intini Web Atelier
@@ -67,7 +67,7 @@ const Navbar = () => {
           <li key={item.label} className="hidden lg:block">
             <button
               onClick={() => scrollTo(item.href)}
-              className="text-[15px] xl:text-[18px] px-3 xl:px-4 py-2.5 xl:py-3 rounded-full transition-colors duration-150 whitespace-nowrap"
+              className="text-[14px] xl:text-[15px] px-3 py-2 rounded-full transition-colors duration-150 whitespace-nowrap"
               style={{ color: 'rgba(255,255,255,0.62)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
               onMouseEnter={(e) => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.62)'; e.currentTarget.style.background = 'transparent'; }}
@@ -82,7 +82,7 @@ const Navbar = () => {
       <div className="flex items-center gap-2 xl:gap-3 shrink-0">
         <button
           onClick={toggleLang}
-          className="text-[11px] lg:text-[13px] xl:text-[15px] tracking-[0.1em] uppercase px-2.5 py-1.5 lg:px-3 lg:py-2.5 xl:px-4 xl:py-3 rounded-full transition-colors duration-150"
+          className="text-[11px] xl:text-[12px] tracking-[0.1em] uppercase px-2.5 py-1.5 lg:px-3 lg:py-2 rounded-full transition-colors duration-150"
           style={{ border: '1px solid rgba(255,255,255,0.14)', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)' }}
           onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)')}
           onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.14)')}
@@ -93,14 +93,14 @@ const Navbar = () => {
         {/* CTA filled pill */}
         <button
           onClick={() => scrollTo('#contatti')}
-          className="hidden md:inline-flex items-center gap-2 xl:gap-3 rounded-full transition-opacity duration-150 whitespace-nowrap text-[13px] lg:text-[14px] xl:text-[18px] py-2 pl-4 pr-2 lg:py-2.5 lg:pl-5 lg:pr-2 xl:py-3 xl:pl-7 xl:pr-3"
+          className="hidden md:inline-flex items-center gap-2 rounded-full transition-opacity duration-150 whitespace-nowrap text-[13px] xl:text-[14px] py-2 pl-4 pr-2 xl:pl-5 xl:pr-2"
           style={{ background: '#fff', color: '#000', fontFamily: 'var(--font-body)', fontWeight: 500 }}
           onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.88')}
           onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
         >
           {t.nav.contatti}
           <span
-            className="inline-flex items-center justify-center rounded-full w-[22px] h-[22px] lg:w-7 lg:h-7 xl:w-9 xl:h-9 text-[12px] lg:text-[14px] xl:text-[17px]"
+            className="inline-flex items-center justify-center rounded-full w-[22px] h-[22px] xl:w-7 xl:h-7 text-[12px] xl:text-[14px]"
             style={{ background: 'rgba(0,0,0,0.1)' }}
           >
             →
