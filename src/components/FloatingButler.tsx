@@ -23,7 +23,7 @@ const FloatingButler = () => {
             transition={{ duration: 0.25 }}
           >
             <a
-              href="https://wa.me/393345415707"
+              href="https://wa.me/393793386763"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2.5 pl-4 pr-5 py-2.5 rounded-full text-[10px] tracking-[0.15em] uppercase whitespace-nowrap transition-all duration-300 hover:scale-105"
@@ -38,7 +38,7 @@ const FloatingButler = () => {
               WhatsApp
             </a>
             <a
-              href="mailto:intiniwebatelier@gmail.com"
+              href="mailto:info@mattiaintini.com"
               className="flex items-center gap-2.5 pl-4 pr-5 py-2.5 rounded-full text-[10px] tracking-[0.15em] uppercase whitespace-nowrap transition-all duration-300 hover:scale-105"
               style={{
                 background: 'rgba(217,119,87,0.06)',

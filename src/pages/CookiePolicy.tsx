@@ -67,7 +67,7 @@ const CookiePolicy = () => (
           <h2 className="text-xs tracking-[0.2em] uppercase mb-3" style={{ color: 'rgba(217,119,87,0.7)' }}>4. Titolare del Trattamento</h2>
           <p>
             Mattia Intini – Libero Professionista<br />
-            Email: <a href="mailto:intiniwebatelier@gmail.com" className="underline" style={{ color: '#D97757' }}>intiniwebatelier@gmail.com</a>
+            Email: <a href="mailto:info@mattiaintini.com" className="underline" style={{ color: '#D97757' }}>info@mattiaintini.com</a>
           </p>
         </section>
 

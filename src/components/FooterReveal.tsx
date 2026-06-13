@@ -29,13 +29,13 @@ const FooterReveal = () => {
               {t.footer.sartoriaDesc}
               <br />
               <a
-                href="mailto:intiniwebatelier@gmail.com"
+                href="mailto:info@mattiaintini.com"
                 className="transition-colors duration-300 mt-1 inline-block"
                 style={{ color: 'rgba(255,255,255,0.78)' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.78)')}
               >
-                intiniwebatelier@gmail.com
+                info@mattiaintini.com
               </a>
             </p>
           </div>
@@ -46,7 +46,7 @@ const FooterReveal = () => {
             </p>
             <p className="text-sm md:text-base leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
               <a
-                href="https://wa.me/393345415707"
+                href="https://wa.me/393793386763"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition-colors duration-300"
@@ -54,7 +54,7 @@ const FooterReveal = () => {
                 onMouseEnter={(e) => (e.currentTarget.style.color = '#D97757')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.78)')}
               >
-                +39 334 541 5707 · WhatsApp
+                +39 379 338 6763 · WhatsApp
               </a>
               <br />
               Torino, Italia
