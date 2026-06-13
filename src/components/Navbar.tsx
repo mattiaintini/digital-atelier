@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-3 lg:gap-4 xl:gap-7 p-1.5 pl-3 lg:pl-4 lg:pr-2 xl:pl-5 xl:pr-2"
+      className="absolute top-4 lg:top-6 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-2 lg:gap-3 xl:gap-4 p-1.5 pl-3 lg:pl-3.5 lg:pr-2 xl:pl-4 xl:pr-2"
       style={{
         gridTemplateColumns: 'auto 1fr auto',
         background: 'rgba(15,15,16,0.65)',
@@ -67,7 +67,7 @@ const Navbar = () => {
           <li key={item.label} className="hidden lg:block">
             <button
               onClick={() => scrollTo(item.href)}
-              className="text-[14px] xl:text-[15px] px-3 py-2 rounded-full transition-colors duration-150 whitespace-nowrap"
+              className="text-[14px] xl:text-[15px] px-2.5 py-2 rounded-full transition-colors duration-150 whitespace-nowrap"
               style={{ color: 'rgba(255,255,255,0.62)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
               onMouseEnter={(e) => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.62)'; e.currentTarget.style.background = 'transparent'; }}

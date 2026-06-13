@@ -8,6 +8,8 @@ import intiniJournalImg from '@/assets/portfolio/journal-suite-preview.png';
 import marchettiImg from '@/assets/projects/marchetti-bg.png';
 import lumiereImg from '@/assets/projects/lumiere-bg.jpg';
 import yachtImg from '@/assets/projects/yacht-bg.jpg';
+import marineImg from '@/assets/portfolio/mockup-marine-preview.jpg';
+import esteticiImg from '@/assets/portfolio/mockup-estetici-preview.jpg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,10 +28,13 @@ const projects: Project[] = [
   { title: 'Marchetti Concessionario', subtitle: 'Automotive Dealership', url: 'https://marchetticoncessionario.vercel.app', image: marchettiImg, isActive: false },
   { title: 'Lumière', subtitle: 'Luxury Wellness & Spa', url: 'https://lumieredemo.vercel.app', image: lumiereImg, isActive: false },
   { title: 'Yacht Charter', subtitle: 'Premium Maritime Experience', url: 'https://yachtcharterdemo.vercel.app/', image: yachtImg, isActive: false },
+  { title: 'Attività Marine', subtitle: 'Charter & Sea Tour Concepts', url: 'https://mockup-attivita-marine.vercel.app', image: marineImg, isActive: false },
+  { title: 'Centri Estetici', subtitle: 'Beauty & Wellness Concepts', url: 'https://mockup-centri-estetici.vercel.app', image: esteticiImg, isActive: false },
 ];
 
-const row1 = projects.slice(0, 3);
-const row2 = projects.slice(3);
+const mid = Math.ceil(projects.length / 2);
+const row1 = projects.slice(0, mid);
+const row2 = projects.slice(mid);
 
 const ProjectCard = ({ project }: { project: Project }) => {
   const [hovered, setHovered] = useState(false);

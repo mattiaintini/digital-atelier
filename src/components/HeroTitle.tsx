@@ -1,5 +1,4 @@
 import { useLanguage } from '@/i18n/LanguageContext';
-import logoMi from '@/assets/logo-mi-white.png';
 
 interface HeroTitleProps {
   visible: boolean;
@@ -11,30 +10,15 @@ const HeroTitle = ({ visible }: HeroTitleProps) => {
 
   return (
     <div className="relative z-20 text-center px-5 md:px-6 max-w-5xl mx-auto flex flex-col items-center">
-      {/* Logo firma MI */}
-      <img
-        src={logoMi}
-        alt="Mattia Intini"
-        className="select-none pointer-events-none"
-        style={{
-          width: 'clamp(96px, 13vw, 180px)',
-          height: 'auto',
-          marginBottom: 'clamp(1.5rem, 3vw, 2.75rem)',
-          opacity: visible ? 0.95 : 0,
-          transform: visible ? 'translateY(0)' : 'translateY(12px)',
-          transition: 'opacity 1.4s ease, transform 1.4s ease',
-        }}
-      />
-
       <h1
         className="text-foreground"
         style={{
           fontFamily: 'var(--font-display)',
           fontWeight: 500,
-          fontSize: 'clamp(2.6rem, 8.6vw, 8.25rem)',
-          letterSpacing: '-0.03em',
-          lineHeight: 1.04,
-          marginBottom: 'clamp(1.25rem, 2.5vw, 2rem)',
+          fontSize: 'clamp(1.95rem, 6.45vw, 6.2rem)',
+          letterSpacing: '-0.035em',
+          lineHeight: 1.06,
+          marginBottom: 'clamp(1.5rem, 2.8vw, 2.25rem)',
           opacity: visible ? 1 : 0,
           transform: visible ? 'translateY(0)' : 'translateY(16px)',
           transition: 'opacity 1.6s ease 0.25s, transform 1.6s ease 0.25s',
@@ -44,14 +28,14 @@ const HeroTitle = ({ visible }: HeroTitleProps) => {
       </h1>
 
       <p
-        className="max-w-2xl mx-auto"
+        className="max-w-xl mx-auto"
         style={{
           fontFamily: 'var(--font-body)',
           fontWeight: 400,
-          fontSize: 'clamp(0.95rem, 1.5vw, 1.2rem)',
-          letterSpacing: '0.01em',
-          color: 'rgba(255,255,255,0.66)',
-          lineHeight: 1.65,
+          fontSize: 'clamp(0.95rem, 1.4vw, 1.15rem)',
+          letterSpacing: '0.005em',
+          color: 'rgba(255,255,255,0.6)',
+          lineHeight: 1.7,
           opacity: visible ? 1 : 0,
           transition: 'opacity 1.6s ease 0.7s',
         }}
