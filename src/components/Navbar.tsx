@@ -35,10 +35,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-4 md:top-5 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-3 lg:gap-6"
+      className="fixed top-4 lg:top-7 left-1/2 -translate-x-1/2 z-50 w-max max-w-[calc(100%-24px)] grid items-center gap-3 lg:gap-9 p-2 pl-[18px] lg:py-3 lg:pl-9 lg:pr-3"
       style={{
         gridTemplateColumns: 'auto 1fr auto',
-        padding: '8px 8px 8px 18px',
         background: 'rgba(15,15,16,0.65)',
         backdropFilter: 'blur(20px) saturate(180%)',
         WebkitBackdropFilter: 'blur(20px) saturate(180%)',
@@ -47,15 +46,15 @@ const Navbar = () => {
       }}
     >
       {/* Brand */}
-      <button onClick={() => scrollTo('#hero')} className="flex items-center gap-2.5 shrink-0">
+      <button onClick={() => scrollTo('#hero')} className="flex items-center gap-2.5 lg:gap-3.5 shrink-0">
         <img
           src={logoMi}
           alt="Mattia Intini"
-          className="h-5 md:h-6 w-auto object-contain select-none"
+          className="h-5 md:h-7 lg:h-10 w-auto object-contain select-none"
           style={{ opacity: 0.95 }}
         />
         <span
-          className="hidden sm:block text-[13px] md:text-[14px] whitespace-nowrap"
+          className="hidden sm:block text-[13px] md:text-[15px] lg:text-[19px] whitespace-nowrap"
           style={{ color: '#fff', fontFamily: 'var(--font-display)', fontWeight: 600, letterSpacing: '-0.02em' }}
         >
           Intini Web Atelier
@@ -63,12 +62,12 @@ const Navbar = () => {
       </button>
 
       {/* Links — center column */}
-      <ul className="flex items-center justify-center gap-1 list-none min-w-0">
+      <ul className="flex items-center justify-center gap-1 lg:gap-2 list-none min-w-0">
         {NAV_ITEMS.map((item) => (
           <li key={item.label} className="hidden lg:block">
             <button
               onClick={() => scrollTo(item.href)}
-              className="text-[13px] px-3 py-2 rounded-full transition-colors duration-150 whitespace-nowrap"
+              className="text-[16px] px-4 py-2.5 rounded-full transition-colors duration-150 whitespace-nowrap"
               style={{ color: 'rgba(255,255,255,0.62)', fontFamily: 'var(--font-body)', fontWeight: 400 }}
               onMouseEnter={(e) => { e.currentTarget.style.color = '#fff'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
               onMouseLeave={(e) => { e.currentTarget.style.color = 'rgba(255,255,255,0.62)'; e.currentTarget.style.background = 'transparent'; }}
@@ -80,10 +79,10 @@ const Navbar = () => {
       </ul>
 
       {/* Right group */}
-      <div className="flex items-center gap-2 shrink-0">
+      <div className="flex items-center gap-2 lg:gap-3 shrink-0">
         <button
           onClick={toggleLang}
-          className="text-[11px] tracking-[0.1em] uppercase px-2.5 py-1.5 rounded-full transition-colors duration-150"
+          className="text-[11px] lg:text-[14px] tracking-[0.1em] uppercase px-2.5 py-1.5 lg:px-4 lg:py-2.5 rounded-full transition-colors duration-150"
           style={{ border: '1px solid rgba(255,255,255,0.14)', color: 'rgba(255,255,255,0.85)', fontFamily: 'var(--font-body)' }}
           onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)')}
           onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'rgba(255,255,255,0.14)')}
@@ -94,15 +93,15 @@ const Navbar = () => {
         {/* CTA filled pill */}
         <button
           onClick={() => scrollTo('#contatti')}
-          className="hidden md:inline-flex items-center gap-2 rounded-full transition-opacity duration-150 whitespace-nowrap"
-          style={{ background: '#fff', color: '#000', padding: '8px 8px 8px 16px', fontFamily: 'var(--font-body)', fontWeight: 500, fontSize: '13px' }}
+          className="hidden md:inline-flex items-center gap-2 lg:gap-2.5 rounded-full transition-opacity duration-150 whitespace-nowrap text-[13px] lg:text-[16px] py-2 pl-4 pr-2 lg:py-2.5 lg:pl-6 lg:pr-2.5"
+          style={{ background: '#fff', color: '#000', fontFamily: 'var(--font-body)', fontWeight: 500 }}
           onMouseEnter={(e) => (e.currentTarget.style.opacity = '0.88')}
           onMouseLeave={(e) => (e.currentTarget.style.opacity = '1')}
         >
           {t.nav.contatti}
           <span
-            className="inline-flex items-center justify-center rounded-full"
-            style={{ width: 22, height: 22, background: 'rgba(0,0,0,0.1)', fontSize: 12 }}
+            className="inline-flex items-center justify-center rounded-full w-[22px] h-[22px] lg:w-8 lg:h-8 text-[12px] lg:text-[15px]"
+            style={{ background: 'rgba(0,0,0,0.1)' }}
           >
             →
           </span>
