@@ -95,13 +95,13 @@ const AboutSection = () => {
             backdropFilter: 'blur(20px)',
           }}
         >
-          <p className="text-xs md:text-[14px] leading-[2]" style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(220,218,214,0.78)' }}>
+          <p className="text-base md:text-xl leading-[1.85]" style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(220,218,214,0.78)' }}>
             {t.about.p1}<span style={{ color: '#ffffff', fontWeight: 400 }}>{t.about.p1Name}</span>{t.about.p1b}
           </p>
-          <p className="text-xs md:text-[14px] leading-[2]" style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(220,218,214,0.78)' }}>
+          <p className="text-base md:text-xl leading-[1.85]" style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(220,218,214,0.78)' }}>
             {t.about.p2}<span style={{ color: '#ffffff', fontWeight: 400 }}>{t.about.p2Bold}</span>{t.about.p2b}
           </p>
-          <p className="text-xs md:text-[14px] leading-[2]" style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(220,218,214,0.78)' }}>
+          <p className="text-base md:text-xl leading-[1.85]" style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(220,218,214,0.78)' }}>
             {t.about.p3}<span style={{ color: '#D97757', fontWeight: 400 }}>{t.about.p3Bold}</span>{t.about.p3b}
           </p>
           <div className="pt-4 mt-4" style={{ borderTop: '1px solid rgba(217,119,87,0.08)' }}>
@@ -109,7 +109,7 @@ const AboutSection = () => {
               className="italic"
               style={{
                 fontFamily: 'var(--font-display)', fontWeight: 400,
-                fontSize: 'clamp(0.85rem, 1.8vw, 1.15rem)',
+                fontSize: 'clamp(1.15rem, 2.2vw, 1.5rem)',
                 color: 'rgba(255,255,255,0.7)', lineHeight: 1.8,
               }}
             >

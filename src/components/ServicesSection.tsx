@@ -120,7 +120,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
             {lang === 'it' ? 'I Nostri Pacchetti' : 'Our Packages'}
           </h2>
           <p
-            className="text-sm md:text-base max-w-2xl mx-auto"
+            className="text-lg md:text-xl max-w-2xl mx-auto"
             style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.78)', letterSpacing: '0.03em', lineHeight: 1.9 }}
           >
             {lang === 'it'
@@ -165,7 +165,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                   {pkg.subtitle}
                 </p>
                 <p
-                  className="text-sm mb-4 max-w-lg mx-auto"
+                  className="text-base md:text-lg mb-4 max-w-lg mx-auto"
                   style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.78)', lineHeight: 1.8 }}
                 >
                   {pkg.description}
@@ -176,7 +176,7 @@ const ServicesSection = ({ onContact }: { onContact: () => void }) => {
                     <span key={fi} className="flex items-center gap-2">
                       <span className="w-1 h-1 rounded-full" style={{ background: '#D97757', opacity: 0.4 }} />
                       <span
-                        className="text-[11px]"
+                        className="text-sm md:text-base"
                         style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.82)' }}
                       >
                         {feat}

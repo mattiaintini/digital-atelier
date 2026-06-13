@@ -11,7 +11,7 @@ const FAQSection = () => {
     <section className="py-20 md:py-32 px-4 md:px-6">
       <div className="max-w-2xl mx-auto">
         <h2
-          className="text-2xl md:text-3xl text-center mb-8 md:mb-12"
+          className="text-3xl md:text-4xl text-center mb-8 md:mb-12"
           style={{ fontFamily: 'var(--font-display)', color: '#D97757' }}
         >
           {t.faq.title}
@@ -27,7 +27,7 @@ const FAQSection = () => {
                 onClick={() => setOpenId(openId === i ? null : i)}
                 className="w-full flex items-center justify-between p-4 text-left min-h-[48px]"
               >
-                <span className="text-sm pr-4" style={{ color: openId === i ? '#D97757' : 'rgba(255,255,255,0.7)' }}>
+                <span className="text-base md:text-lg pr-4" style={{ color: openId === i ? '#D97757' : 'rgba(255,255,255,0.7)' }}>
                   {faq.question}
                 </span>
                 <motion.div animate={{ rotate: openId === i ? 180 : 0 }} transition={{ duration: 0.2 }}>
@@ -43,7 +43,7 @@ const FAQSection = () => {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="px-4 pb-4 text-[13px] leading-relaxed" style={{ color: 'rgba(255,255,255,0.82)' }}>
+                    <p className="px-4 pb-4 text-base md:text-lg leading-relaxed" style={{ color: 'rgba(255,255,255,0.82)' }}>
                       {faq.answer}
                     </p>
                   </motion.div>

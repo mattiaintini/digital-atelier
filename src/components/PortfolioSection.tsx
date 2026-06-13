@@ -160,7 +160,7 @@ const PortfolioSection = () => {
           {t.portfolio.title}
         </h2>
         <p
-          className="text-xs md:text-base max-w-xl mx-auto"
+          className="text-base md:text-xl max-w-xl mx-auto"
           style={{ fontFamily: 'var(--font-body)', fontWeight: 400, color: 'rgba(255,255,255,0.35)', letterSpacing: '0.08em', lineHeight: 1.8 }}
         >
           {t.portfolio.subtitle}

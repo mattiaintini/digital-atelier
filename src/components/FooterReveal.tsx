@@ -25,7 +25,7 @@ const FooterReveal = () => {
             <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(217,119,87,0.8)' }}>
               {t.footer.sartoria}
             </p>
-            <p className="text-xs md:text-sm leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
+            <p className="text-sm md:text-base leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
               {t.footer.sartoriaDesc}
               <br />
               <a
@@ -44,7 +44,7 @@ const FooterReveal = () => {
             <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(217,119,87,0.8)' }}>
               {t.footer.contatti}
             </p>
-            <p className="text-xs md:text-sm leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
+            <p className="text-sm md:text-base leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
               <a
                 href="https://wa.me/393345415707"
                 target="_blank"
@@ -65,7 +65,7 @@ const FooterReveal = () => {
             <p className="text-[9px] md:text-[10px] tracking-[0.3em] uppercase mb-2" style={{ color: 'rgba(217,119,87,0.8)' }}>
               {t.footer.datiLegali}
             </p>
-            <p className="text-xs md:text-sm leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
+            <p className="text-sm md:text-base leading-[1.7]" style={{ color: 'rgba(255,255,255,0.88)', fontFamily: 'var(--font-body)', fontWeight: 400 }}>
               Mattia Intini · {t.footer.libero}
               <br />
               P.IVA 13419790012
