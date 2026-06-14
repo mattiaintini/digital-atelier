@@ -11,9 +11,9 @@ export const translations = {
       contatti: 'Contatti',
     },
     hero: {
-      title: "Esperienze Digitali d'Élite",
-      subtitle: 'Creiamo presenze digitali su misura per chi non accetta compromessi',
-      cta1: 'Richiedi INFO gratuite',
+      title: "Siti su misura che trasformano i visitatori in clienti",
+      subtitle: 'Progettiamo siti veloci, eleganti e pensati per farti contattare di più. Niente template, niente compromessi.',
+      cta1: 'Richiedi un preventivo gratuito',
       cta2: 'I Nostri Lavori',
     },
     about: {
@@ -25,11 +25,11 @@ export const translations = {
       p1b: ", fondatore di Intini Web Atelier.",
       p2: 'Intini Web Atelier è una ',
       p2Bold: 'boutique digitale',
-      p2b: " nata con una missione chiara: rivoluzionare la presenza online dei brand attraverso esperienze web cinematiche, immersive e dal forte impatto visivo. Creiamo siti web che non si limitano a farsi guardare, ma che si fanno vivere.",
+      p2b: " nata con una missione chiara: aiutare le attività a farsi trovare e scegliere online. Costruiamo siti che caricano in un istante, si vedono benissimo da telefono e accompagnano il visitatore fino al contatto. Belli da vedere e costruiti per portarti clienti.",
       p3: "Trattandosi di un progetto esclusivo, ho deciso di rendere accessibile l'eccellenza: offriamo la stessa qualità visiva e tecnologica riservata tipicamente ai top brand internazionali, ma a ",
-      p3Bold: 'condizioni di lancio privilegiate',
-      p3b: '.',
-      quote: '"Nessun compromesso. Solo estetica premium, performance ingegneristiche e un impatto visivo indimenticabile."',
+      p3Bold: 'un prezzo onesto',
+      p3b: ', perché lavoro in proprio e senza i costi delle grandi agenzie.',
+      quote: '"Un sito bello non basta. Deve essere veloce, chiaro e farti arrivare richieste."',
     },
     portfolio: {
       label: 'Portfolio',
@@ -53,7 +53,7 @@ export const translations = {
       deliveryNote: 'Per gli altri pacchetti, consegna rapidissima in base al progetto.',
       price: 'Prezzi a partire da',
       priceValue: '299€',
-      cta: 'Richiedi INFO gratuite',
+      cta: 'Richiedi un preventivo gratuito',
     },
     atelier: {
       label: 'Area Esclusiva',
@@ -77,7 +77,7 @@ export const translations = {
         },
         {
           question: 'Quali sono i tempi di consegna per un sito web?',
-          answer: "I tempi variano in base alla complessità del progetto. Un sito vetrina premium viene realizzato in 2-4 settimane, mentre un progetto più complesso con funzionalità avanzate richiede 4-8 settimane. Ogni progetto segue un workflow strutturato: briefing, wireframe, design, sviluppo e testing.",
+          answer: "I tempi variano in base alla complessità del progetto. Un sito vetrina premium richiede da 2 a 4 settimane, mentre un progetto più complesso con funzionalità avanzate richiede da 4 a 8 settimane. Ogni progetto segue un workflow strutturato: briefing, wireframe, design, sviluppo e testing.",
         },
         {
           question: 'Offrite assistenza post-lancio?',
@@ -85,7 +85,7 @@ export const translations = {
         },
         {
           question: "Qual è il processo di realizzazione di un sito d'élite?",
-          answer: "Ogni ecosistema digitale nasce da una fase di analisi stilistica e tecnica, seguita dalla modellazione delle interazioni 3D e dall'ottimizzazione del codice per performance fulminee su ogni dispositivo.",
+          answer: "Partiamo dal capire cosa ti serve e chi sono i tuoi clienti. Poi disegniamo il sito, lo sviluppiamo su misura e lo testiamo su ogni dispositivo, così carica in fretta ovunque.",
         },
         {
           question: 'Cosa include il pacchetto Social Media?',
@@ -95,15 +95,15 @@ export const translations = {
     },
     footer: {
       sartoria: 'Sartoria Digitale',
-      sartoriaDesc: 'Siti web su misura per clienti esclusivi.',
+      sartoriaDesc: 'Siti web su misura per attività che vogliono distinguersi online.',
       contatti: 'Contatti',
       datiLegali: 'Dati Legali',
       libero: 'Libero Professionista',
       copyright: 'INTINI WEB ATELIER · Digital Experiences',
     },
     contact: {
-      cta: 'RICHIEDI INFO GRATUITE',
-      title: 'Richiedi INFO gratuite',
+      cta: 'RICHIEDI UN PREVENTIVO GRATUITO',
+      title: 'Richiedi un preventivo gratuito',
       subtitle: 'RACCONTACI IL TUO PROGETTO',
       nameLabel: 'NOME',
       namePlaceholder: 'Il tuo nome',
@@ -122,17 +122,7 @@ export const translations = {
       error: "Errore nell'invio. Riprova.",
       successTitle: 'Richiesta inviata con successo!',
       successDesc: 'Ti contatteremo a breve per discutere del tuo progetto.',
-    },
-    easter: {
-      title: 'Sorpresa di Pasqua!',
-      desc: 'Festeggia il nostro lancio con un',
-      bonus: 'Bonus esclusivo',
-      codeLabel: 'Usa il codice',
-      discountText: 'per ottenere un ulteriore',
-      discountValue: '25% di sconto',
-      discountSuffix: 'sui nostri servizi.',
-      validity: "Offerta valida fino all'8 Aprile 2026",
-      cta: 'Ottieni lo sconto',
+      guarantee: 'Se la prima bozza non ti convince, la rivediamo senza costi aggiuntivi.',
     },
     cookie: {
       text: 'Questo sito utilizza cookie tecnici e, previo consenso, cookie di profilazione per migliorare la tua esperienza.',
@@ -151,9 +141,9 @@ export const translations = {
       contatti: 'Contact',
     },
     hero: {
-      title: "Elite Digital Experiences",
-      subtitle: 'We craft bespoke digital presences for those who accept no compromise',
-      cta1: 'Request FREE Info',
+      title: "Bespoke websites that turn visitors into clients",
+      subtitle: 'We design fast, elegant websites built to get you contacted more. No templates, no compromises.',
+      cta1: 'Request a free quote',
       cta2: 'Our Works',
     },
     about: {
@@ -165,11 +155,11 @@ export const translations = {
       p1b: ", founder of Intini Web Atelier.",
       p2: 'Intini Web Atelier is a ',
       p2Bold: 'digital boutique',
-      p2b: " born with a clear mission: to revolutionize the online presence of brands through cinematic, immersive web experiences with strong visual impact. We create websites that aren't just seen—they're experienced.",
+      p2b: " born with a clear mission: to help businesses get found and chosen online. We build websites that load in an instant, look great on mobile and guide the visitor all the way to contact. Beautiful to look at and built to bring you clients.",
       p3: "Being an exclusive project, I decided to make excellence accessible: we offer the same visual and technological quality typically reserved for top international brands, but at ",
-      p3Bold: 'privileged launch conditions',
-      p3b: '.',
-      quote: '"No compromise. Only premium aesthetics, engineering performance, and an unforgettable visual impact."',
+      p3Bold: 'an honest price',
+      p3b: ', because I work independently and without the overhead of big agencies.',
+      quote: '"A beautiful website is not enough. It must be fast, clear and bring you enquiries."',
     },
     portfolio: {
       label: 'Portfolio',
@@ -193,7 +183,7 @@ export const translations = {
       deliveryNote: 'For other packages, ultra-fast delivery based on project scope.',
       price: 'Prices starting from',
       priceValue: '€299',
-      cta: 'Request FREE Info',
+      cta: 'Request a free quote',
     },
     atelier: {
       label: 'Exclusive Area',
@@ -217,7 +207,7 @@ export const translations = {
         },
         {
           question: 'What are the delivery times for a website?',
-          answer: "Timelines vary based on project complexity. A premium showcase site is delivered in 2-4 weeks, while more complex projects with advanced features require 4-8 weeks. Every project follows a structured workflow: briefing, wireframe, design, development and testing.",
+          answer: "Timelines vary based on project complexity. A premium showcase site takes 2 to 4 weeks, while more complex projects with advanced features take 4 to 8 weeks. Every project follows a structured workflow: briefing, wireframe, design, development and testing.",
         },
         {
           question: 'Do you offer post-launch support?',
@@ -225,7 +215,7 @@ export const translations = {
         },
         {
           question: "What is the process for creating an elite website?",
-          answer: 'Every digital ecosystem begins with a phase of stylistic and technical analysis, followed by 3D interaction modeling and code optimization for lightning-fast performance on every device.',
+          answer: 'We start by understanding what you need and who your clients are. Then we design the site, build it bespoke and test it on every device, so it loads fast everywhere.',
         },
         {
           question: 'What does the Social Media package include?',
@@ -235,15 +225,15 @@ export const translations = {
     },
     footer: {
       sartoria: 'Digital Tailoring',
-      sartoriaDesc: 'Bespoke luxury websites for exclusive clients.',
+      sartoriaDesc: 'Bespoke websites for businesses that want to stand out online.',
       contatti: 'Contact',
       datiLegali: 'Legal Info',
       libero: 'Freelance Professional',
       copyright: 'INTINI WEB ATELIER · Digital Experiences',
     },
     contact: {
-      cta: 'REQUEST FREE INFO',
-      title: 'Request FREE Info',
+      cta: 'REQUEST A FREE QUOTE',
+      title: 'Request a free quote',
       subtitle: 'TELL US ABOUT YOUR PROJECT',
       nameLabel: 'NAME',
       namePlaceholder: 'Your name',
@@ -262,17 +252,7 @@ export const translations = {
       error: 'Error sending. Please try again.',
       successTitle: 'Request sent successfully!',
       successDesc: 'We will contact you shortly to discuss your project.',
-    },
-    easter: {
-      title: 'Easter Surprise!',
-      desc: 'Celebrate our launch with an',
-      bonus: 'Exclusive Bonus',
-      codeLabel: 'Use the code',
-      discountText: 'to get an additional',
-      discountValue: '25% discount',
-      discountSuffix: 'on our services.',
-      validity: 'Offer valid until April 8, 2026',
-      cta: 'Get your discount',
+      guarantee: 'If the first draft does not convince you, we revise it at no extra cost.',
     },
     cookie: {
       text: 'This site uses technical cookies and, with your consent, profiling cookies to improve your experience.',
@@ -291,9 +271,9 @@ export const translations = {
       contatti: 'Contact',
     },
     hero: {
-      title: "Expériences Digitales d'Élite",
-      subtitle: 'Nous créons des présences digitales sur mesure pour ceux qui n\'acceptent aucun compromis',
-      cta1: 'Demander des Infos Gratuites',
+      title: "Des sites sur mesure qui transforment vos visiteurs en clients",
+      subtitle: 'Nous concevons des sites rapides, élégants et pensés pour vous faire contacter davantage. Pas de templates, aucun compromis.',
+      cta1: 'Demander un devis gratuit',
       cta2: 'Nos Réalisations',
     },
     about: {
@@ -305,11 +285,11 @@ export const translations = {
       p1b: ", fondateur d'Intini Web Atelier.",
       p2: 'Intini Web Atelier est une ',
       p2Bold: 'boutique digitale',
-      p2b: " née avec une mission claire : révolutionner la présence en ligne des marques à travers des expériences web cinématiques, immersives et au fort impact visuel. Nous créons des sites web qui ne se contentent pas d'être vus — ils se vivent.",
-      p3: "S'agissant d'un projet exclusif, j'ai décidé de rendre l'excellence accessible : nous offrons la même qualité visuelle et technologique habituellement réservée aux grandes marques internationales, mais à des ",
-      p3Bold: 'conditions de lancement privilégiées',
-      p3b: '.',
-      quote: '"Aucun compromis. Seulement une esthétique premium, des performances d\'ingénierie et un impact visuel inoubliable."',
+      p2b: " née avec une mission claire : aider les entreprises à se faire trouver et choisir en ligne. Nous construisons des sites qui se chargent en un instant, s'affichent parfaitement sur mobile et accompagnent le visiteur jusqu'au contact. Beaux à regarder et conçus pour vous apporter des clients.",
+      p3: "S'agissant d'un projet exclusif, j'ai décidé de rendre l'excellence accessible : nous offrons la même qualité visuelle et technologique habituellement réservée aux grandes marques internationales, mais à ",
+      p3Bold: 'un prix honnête',
+      p3b: ', parce que je travaille en indépendant, sans les coûts des grandes agences.',
+      quote: '"Un beau site ne suffit pas. Il doit être rapide, clair et vous apporter des demandes."',
     },
     portfolio: {
       label: 'Portfolio',
@@ -333,7 +313,7 @@ export const translations = {
       deliveryNote: 'Pour les autres packages, livraison ultra-rapide selon le projet.',
       price: 'Prix à partir de',
       priceValue: '299€',
-      cta: 'Demander des Infos Gratuites',
+      cta: 'Demander un devis gratuit',
     },
     atelier: {
       label: 'Espace Exclusif',
@@ -365,7 +345,7 @@ export const translations = {
         },
         {
           question: "Quel est le processus de création d'un site d'élite ?",
-          answer: "Chaque écosystème digital naît d'une phase d'analyse stylistique et technique, suivie de la modélisation des interactions 3D et de l'optimisation du code pour des performances fulgurantes sur chaque appareil.",
+          answer: "Nous commençons par comprendre ce dont vous avez besoin et qui sont vos clients. Ensuite nous dessinons le site, le développons sur mesure et le testons sur chaque appareil, pour qu'il se charge vite partout.",
         },
         {
           question: 'Que comprend le package Social Media ?',
@@ -375,15 +355,15 @@ export const translations = {
     },
     footer: {
       sartoria: 'Couture Digitale',
-      sartoriaDesc: 'Sites web sur mesure pour clients exclusifs.',
+      sartoriaDesc: 'Sites web sur mesure pour les entreprises qui veulent se démarquer en ligne.',
       contatti: 'Contact',
       datiLegali: 'Mentions Légales',
       libero: 'Professionnel Indépendant',
       copyright: 'INTINI WEB ATELIER · Expériences Digitales',
     },
     contact: {
-      cta: 'DEMANDER DES INFOS GRATUITES',
-      title: 'Demander des Infos Gratuites',
+      cta: 'DEMANDER UN DEVIS GRATUIT',
+      title: 'Demander un devis gratuit',
       subtitle: 'PARLEZ-NOUS DE VOTRE PROJET',
       nameLabel: 'NOM',
       namePlaceholder: 'Votre nom',
@@ -402,17 +382,7 @@ export const translations = {
       error: "Erreur lors de l'envoi. Veuillez réessayer.",
       successTitle: 'Demande envoyée avec succès !',
       successDesc: 'Nous vous contacterons sous peu pour discuter de votre projet.',
-    },
-    easter: {
-      title: 'Surprise de Pâques !',
-      desc: 'Célébrez notre lancement avec un',
-      bonus: 'Bonus Exclusif',
-      codeLabel: 'Utilisez le code',
-      discountText: 'pour obtenir un',
-      discountValue: '25% de réduction',
-      discountSuffix: 'sur nos services.',
-      validity: "Offre valable jusqu'au 8 Avril 2026",
-      cta: 'Obtenir la réduction',
+      guarantee: "Si la première maquette ne vous convainc pas, nous la révisons sans frais supplémentaires.",
     },
     cookie: {
       text: 'Ce site utilise des cookies techniques et, avec votre consentement, des cookies de profilage pour améliorer votre expérience.',
@@ -431,9 +401,9 @@ export const translations = {
       contatti: 'Kontakt',
     },
     hero: {
-      title: 'Elite Digitale Erlebnisse',
-      subtitle: 'Wir schaffen maßgeschneiderte digitale Auftritte für alle, die keine Kompromisse akzeptieren',
-      cta1: 'Kostenlose Infos Anfordern',
+      title: 'Maßgeschneiderte Websites, die Besucher zu Kunden machen',
+      subtitle: 'Wir gestalten schnelle, elegante Websites, die dafür sorgen, dass Sie öfter kontaktiert werden. Keine Templates, keine Kompromisse.',
+      cta1: 'Kostenloses Angebot anfordern',
       cta2: 'Unsere Arbeiten',
     },
     about: {
@@ -445,11 +415,11 @@ export const translations = {
       p1b: ", Gründer von Intini Web Atelier.",
       p2: 'Intini Web Atelier ist eine ',
       p2Bold: 'digitale Boutique',
-      p2b: " mit einer klaren Mission: die Online-Präsenz von Marken durch filmische, immersive Web-Erlebnisse mit starkem visuellem Impact zu revolutionieren. Wir erstellen Websites, die nicht nur betrachtet – sondern erlebt werden.",
+      p2b: " mit einer klaren Mission: Unternehmen dabei zu helfen, online gefunden und gewählt zu werden. Wir bauen Websites, die im Nu laden, auf dem Handy hervorragend aussehen und den Besucher bis zum Kontakt begleiten. Schön anzusehen und gebaut, um Ihnen Kunden zu bringen.",
       p3: "Als exklusives Projekt habe ich beschlossen, Exzellenz zugänglich zu machen: Wir bieten die gleiche visuelle und technologische Qualität, die normalerweise internationalen Top-Marken vorbehalten ist, aber zu ",
-      p3Bold: 'privilegierten Startkonditionen',
-      p3b: '.',
-      quote: '"Kein Kompromiss. Nur Premium-Ästhetik, ingenieurtechnische Leistung und ein unvergesslicher visueller Impact."',
+      p3Bold: 'einem ehrlichen Preis',
+      p3b: ', weil ich selbstständig arbeite, ohne die Kosten großer Agenturen.',
+      quote: '"Eine schöne Website reicht nicht. Sie muss schnell und klar sein und Ihnen Anfragen bringen."',
     },
     portfolio: {
       label: 'Portfolio',
@@ -473,7 +443,7 @@ export const translations = {
       deliveryNote: 'Für andere Pakete ultraschnelle Lieferung je nach Projektumfang.',
       price: 'Preise ab',
       priceValue: '299€',
-      cta: 'Kostenlose Infos Anfordern',
+      cta: 'Kostenloses Angebot anfordern',
     },
     atelier: {
       label: 'Exklusivbereich',
@@ -497,7 +467,7 @@ export const translations = {
         },
         {
           question: 'Wie lange dauert die Erstellung einer Website?',
-          answer: "Die Zeitrahmen variieren je nach Projektkomplexität. Eine Premium-Showcase-Website wird in 2–4 Wochen geliefert, während komplexere Projekte 4–8 Wochen benötigen. Jedes Projekt folgt einem strukturierten Workflow: Briefing, Wireframe, Design, Entwicklung und Testing.",
+          answer: "Die Zeitrahmen variieren je nach Projektkomplexität. Eine Premium-Showcase-Website wird in 2 bis 4 Wochen geliefert, während komplexere Projekte 4 bis 8 Wochen benötigen. Jedes Projekt folgt einem strukturierten Workflow: Briefing, Wireframe, Design, Entwicklung und Testing.",
         },
         {
           question: 'Bieten Sie Support nach dem Launch?',
@@ -505,7 +475,7 @@ export const translations = {
         },
         {
           question: 'Wie sieht der Prozess zur Erstellung einer Elite-Website aus?',
-          answer: 'Jedes digitale Ökosystem beginnt mit einer Phase der stilistischen und technischen Analyse, gefolgt von der Modellierung der 3D-Interaktionen und der Code-Optimierung für blitzschnelle Performance auf jedem Gerät.',
+          answer: 'Wir beginnen damit zu verstehen, was Sie brauchen und wer Ihre Kunden sind. Dann gestalten wir die Website, entwickeln sie maßgeschneidert und testen sie auf jedem Gerät, damit sie überall schnell lädt.',
         },
         {
           question: 'Was umfasst das Social-Media-Paket?',
@@ -515,15 +485,15 @@ export const translations = {
     },
     footer: {
       sartoria: 'Digitale Maßschneiderei',
-      sartoriaDesc: 'Maßgeschneiderte Websites für exklusive Kunden.',
+      sartoriaDesc: 'Maßgeschneiderte Websites für Unternehmen, die online auffallen wollen.',
       contatti: 'Kontakt',
       datiLegali: 'Rechtliches',
       libero: 'Freiberufler',
       copyright: 'INTINI WEB ATELIER · Digitale Erlebnisse',
     },
     contact: {
-      cta: 'KOSTENLOSE INFOS ANFORDERN',
-      title: 'Kostenlose Infos Anfordern',
+      cta: 'KOSTENLOSES ANGEBOT ANFORDERN',
+      title: 'Kostenloses Angebot anfordern',
       subtitle: 'ERZÄHLEN SIE UNS VON IHREM PROJEKT',
       nameLabel: 'NAME',
       namePlaceholder: 'Ihr Name',
@@ -542,17 +512,7 @@ export const translations = {
       error: 'Fehler beim Senden. Bitte versuchen Sie es erneut.',
       successTitle: 'Anfrage erfolgreich gesendet!',
       successDesc: 'Wir werden Sie in Kürze kontaktieren, um Ihr Projekt zu besprechen.',
-    },
-    easter: {
-      title: 'Oster-Überraschung!',
-      desc: 'Feiern Sie unseren Launch mit einem',
-      bonus: 'Exklusiven Bonus',
-      codeLabel: 'Verwenden Sie den Code',
-      discountText: 'um einen zusätzlichen',
-      discountValue: '25% Rabatt',
-      discountSuffix: 'auf unsere Leistungen zu erhalten.',
-      validity: 'Angebot gültig bis 8. April 2026',
-      cta: 'Rabatt sichern',
+      guarantee: 'Wenn der erste Entwurf Sie nicht überzeugt, überarbeiten wir ihn ohne Zusatzkosten.',
     },
     cookie: {
       text: 'Diese Website verwendet technische Cookies und, mit Ihrer Zustimmung, Profiling-Cookies zur Verbesserung Ihrer Erfahrung.',

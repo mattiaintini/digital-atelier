@@ -183,6 +183,10 @@ const ContactModal = ({ open, onClose }: ContactModalProps) => {
                   >
                     {loading ? t.contact.sending : t.contact.send}
                   </motion.button>
+
+                  <p className="text-[10px] text-center leading-[1.6] pt-1" style={{ color: 'rgba(255,255,255,0.55)' }}>
+                    {t.contact.guarantee}
+                  </p>
                 </form>
               </>
             )}
