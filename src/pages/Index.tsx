@@ -13,7 +13,7 @@ import PortfolioSection from '@/components/PortfolioSection';
 import FAQSection from '@/components/FAQSection';
 import ContactModal from '@/components/ContactModal';
 import FooterReveal from '@/components/FooterReveal';
-import FloatingButler from '@/components/FloatingButler';
+import ChatWidget from '@/components/ChatWidget';
 import Navbar from '@/components/Navbar';
 import AboutSection from '@/components/AboutSection';
 import Marquee from '@/components/Marquee';
@@ -142,7 +142,7 @@ const Index = () => {
           <FooterReveal />
         </main>
       </SmoothScroll>
-      <FloatingButler />
+      <ChatWidget />
       
       <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
     </>

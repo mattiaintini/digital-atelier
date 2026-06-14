@@ -51,15 +51,9 @@ const Navbar = () => {
       >
         <img
           src={logoSignature}
-          alt="Mattia Intini"
+          alt="Intini Web Atelier"
           style={{ height: 34, width: 'auto', display: 'block' }}
         />
-        <span
-          className="hidden sm:block whitespace-nowrap"
-          style={{ color: '#fff', fontWeight: 600, fontSize: 15, letterSpacing: '-0.02em' }}
-        >
-          Intini Web Atelier
-        </span>
       </button>
 
       {/* Links — center column */}
